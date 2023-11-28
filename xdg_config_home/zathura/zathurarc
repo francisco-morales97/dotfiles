@@ -1,0 +1,12 @@
+# Configuraciones globales
+set recolor true
+set page-padding 1
+set sandbox none
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+
+#Definicion de colores del modo oscuro
+set recolor-lightcolor "#282c34"
+set recolor-darkcolor "#abb2bf"
+set highlight-color "#98c379"
+set highlight-active-color "#98c379"

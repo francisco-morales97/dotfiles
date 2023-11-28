@@ -1,0 +1,1012 @@
+ls
+exit
+sudo flatpak update
+sudo flatpak uninstall --delete-data net.xmind.XMind
+exit
+nvim
+exit
+nvim FMPIS-Arch/FMPIS-2.sh
+flatpak list
+nvim FMPIS-Arch/FMPIS-2.sh
+clear
+update-configs
+cd FMPIS-Arch
+git status
+git add -A
+git status
+cd
+exit
+yay -Syu
+exit
+htop
+ls
+cd Descargas
+ls
+exit
+ls
+cd FMPIS-Arch
+git status
+pass -c github
+git commit -m "Actualizacion 20 oct"
+git push origin
+git status
+exit
+nvim
+ls
+exit
+yay -Ss screen
+exit
+ls
+exit
+exit
+cd Documentos/Angular/dashboard
+nvim .
+exit
+cd Documentos/Angular/dashboard
+nvim .
+exit
+matrix
+ping archlinux.org
+clear
+exit
+nvim
+exit
+nvim
+exit
+nvim
+exit
+exit
+exit
+nvim
+nvim .config/nvim/lua/francisco/plugins/treesitter.lua
+exit
+cd Documentos/Groff-docs/Clases-de-ingles
+ls
+nvim clase1.mom
+cd
+nvim .config/nvim/lua/francisco/plugins/lsp-zero.lua
+cd Documentos/Groff-docs/Clases-de-ingles
+nvim clase1.mom
+exit
+nvim
+exit
+cd Documentos/Angular/dashboard
+ls
+ls node_modules
+clear
+ls node_modules | grep "eslint"
+nvim
+nvim
+nvim .
+nvim .
+nvim
+nvim
+nvim
+nvim
+cd
+cd .config/nvim
+nvim .
+nvim .
+cd
+cd Documentos/Angular/dashboard
+nvim .
+nvim 
+npm init @eslint/config
+ls
+nvim 
+nvim
+cd ..
+ls
+cd map-api
+ls
+nvim .
+npm init @eslint/config
+ls
+nvim .
+exit
+cd .config/nvim
+nvim .
+exit
+cd Documentos/Angular/map-api
+nvim
+nvim ~/.config/nvim/lua/francisco/plugins/nvim-lint.lua
+nvim
+nvim
+nvim .eslintrc.js package.json
+ls
+cd ..
+ls
+ng new typescript-linter
+ls
+cd typescript-linter
+ls
+npm install ts-standard -D
+nvim
+nvim .
+nvim .
+nvim package.json
+nvim .
+npm lint
+npm run lint
+nvim
+nvim
+cd ..
+ls
+rm -rf typescript-linter
+ng new lint-test
+cd lint-test
+ls
+ls -a
+npm install eslint -D -E
+npm install eslint-config-airbnb-typescript \\
+            @typescript-eslint/eslint-plugin@^6.0.0 \\
+            @typescript-eslint/parser@^6.0.0 \\
+            --save-dev
+ls
+nvim .
+nvim
+npm info "eslint-config-airbnb-base@latest" peerDependencies
+npm install eslint-config-airbnb-base -E -D
+nvim package.json
+npm install eslint-config-airbnb-base -E -D
+nvim package.json
+npm install eslint-config-airbnb-base -E -D
+nvim .
+nvim
+ls
+cd ..
+ls
+rm -rf lint-test
+ls
+ng new lint-test
+cd lint-test
+ls
+npm init @eslint/config
+ls
+ls -a
+npx install-peerdeps --dev eslint-config-airbnb-base
+npm --version
+npx install-peerdeps --dev eslint-config-airbnb-base
+npm info "eslint-config-airbnb-base@latest" peerDependencies
+npm install eslint-config-airbnb-base -E -D
+nvim .eslintrc.json
+npm install eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin@^6.0.0 @typescript-eslint/parser@^6.0.0 -D
+nvim .
+nvim .
+npm run lint
+nvim package.json
+npx eslint . --ext .js,.jsx,.ts,.tsx
+nvim .eslintrc.json
+nvim .eslintrc.json
+npx eslint . --ext .js,.jsx,.ts,.tsx
+nvim .eslintrc.json
+npx eslint . --ext .js,.jsx,.ts,.tsx
+nvim .eslintrc.json
+npx eslint . --ext .js,.jsx,.ts,.tsx
+nvim .eslintrc.json
+npx eslint . --ext .js,.jsx,.ts,.tsx
+nvim tsconfig.
+nvim tsconfig.json
+ls
+nvim .eslintrc.json
+cd ..
+rm -rf lint-test
+ls
+ng new lint-test
+ls
+cd lint-test
+ls
+npm install eslint -D -E
+npx eslint --init
+ls
+nvim .
+nvim .
+ls
+cd ..
+cd ..
+ls
+cd Vue
+ls
+cd vue-test
+ls
+ls -a
+npm init @eslint/config
+nvim .
+npm init @eslint/config
+npm init @eslint/config
+npm init @eslint/config
+cd ..
+cd ../Angular/lint-test
+clear
+ls -a
+nvim .
+ls
+nvim .eslintrc.json
+npm install prettier -E -D
+npm install eslint-config-prettier -D -E
+nvim .eslintrc.json
+ls -a
+nvim .
+npx eslint-config-prettier src/app/app.component.ts
+npx eslint . --ext .js,.jsx,.ts,.tsx
+nvim .
+cd ..
+rm -rf lint-test
+ls
+ng new lint-test
+cd lint-test
+ls
+ls
+npm init @eslint/config
+npm init @eslint/config
+npx install-peerdeps --dev eslint-config-airbnb-base
+clear
+ls -a
+(\
+  export PKG=eslint-config-airbnb-base;\
+  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"\
+)
+ls -a
+nvim package.json
+ls -a
+nvim .eslintrc.json
+nvim .
+nvim .
+nvim .eslintrc.json
+nvim .eslintrc.json
+ls
+npm install eslint-config-airbnb-typescript \\
+            @typescript-eslint/eslint-plugin@^6.0.0 \\
+            @typescript-eslint/parser@^6.0.0 \\
+            --save-dev
+ls -a
+nvim .eslintrc.json
+npx eslint . --ext .js,.jsx,.ts,.tsx
+nvim .
+nvim .
+nvim package.json
+nvim
+nvim .
+nvim
+nvim .
+npm install prettier eslint-config-prettier -D
+nvim .eslintrc.json
+nvim
+nvim .
+nvim .
+nvim .
+nvim .
+nvim .
+nvim .
+nvim .
+nvim .
+nvim .
+nvim .
+clear
+ls
+nvim src/app/app.component.ts
+nvim .
+exit
+cd Documentos/Angular/lint-test
+nvim
+cd ..
+ls
+rm -rf lint-test
+ng new lint-test
+ls
+cd lint-test
+ls
+npm init @eslint/config
+npm install prettier eslint-config-prettier -D
+nvim .
+nvim .
+nvim .
+nvim .
+nvim .
+nvim .
+nvim ~/.config/nvim/lua/francisco/plugins/format.lua
+nvim .
+nvim .
+nvim .
+exit
+cd Documentos/Angular/lint-test
+nvim package.json
+nvim .
+cd ..
+ls
+ng new airbnb-lint
+cd airbnb-lint
+ls
+npm info "eslint-config-airbnb-base@latest" peerDependencies
+npm install eslint-config-airbnb-base eslint-plugin-import eslint -D
+ls -a
+npx eslint .
+touch .eslintrc.json
+ls
+ls -a
+nvim .eslintrc.json
+npm install eslint-config-airbnb-typescript \\
+            @typescript-eslint/eslint-plugin@^6.0.0 \\
+            @typescript-eslint/parser@^6.0.0 \\
+            -D
+ls -A
+cat .eslintrc.json
+nvim .eslintrc.json
+npx eslint .
+nvim .
+nvim .
+exit
+cd Documentos/Angular/airbnb-lint
+ls
+nvim .eslintrc.json
+cd ..
+ls
+cd lint-test
+nvim .
+exit
+pass
+exit
+nvim
+cd Documentos/Angular/airbnb-lint
+ls
+npm install prettier -D
+ls
+nvim .
+node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+ls -a
+cat .prettierrc
+clear
+ls -a
+nvim .
+npx prettier --check
+npx prettier . --check
+nvim .prettierignore
+nvim .
+cd
+nvim 
+cd Documentos/Angular/airbnb-lint
+nvim .
+exit
+nvim .config/nvim/lua/francisco/plugins/lsp-zero.lua
+cd Documentos/Angular/airbnb-lint
+nvim .
+cd
+nvim .config/nvim/lua/francisco/plugins/lualine.lua
+nvim .config/nvim/lua/francisco/plugins/lualine.lua
+nvim .config/nvim/lua/francisco/plugins/lualine.lua
+nvim .config/nvim/lua/francisco/plugins/lsp-zero.lua
+exit
+cd Documentos/Angular/airbnb-lint
+nvim .eslintrc.json
+cd ../lint-test
+nvim .eslintrc.json
+exit
+nvim
+nvim .config/nvim/lua/francisco/plugins/linter.lua
+nvim .config/nvim/lua/francisco/plugins/linter.lua
+nvim .config/nvim/lua/francisco/plugins/linter.lua
+exit
+nvim .config/nvim/lua/francisco/core/keymaps.lua
+cd Documentos/Angular/airbnb-lint
+nvim .
+exit
+nvim
+exit
+nvim .config/nvim/lua/francisco/core/keymaps.lua
+nvim .config/nvim/lua/francisco/core/keymaps.lua
+cd Documentos/Angular/airbnb-lint
+nvim .
+exit
+exit
+nvim FMPIS-Arch/FMPIS-2.sh
+yay -Rs ttf-jetbrains-mono-nerd
+exit
+nvim FMPIS-Arch/FMPIS-2.sh
+exit
+ls /usr/share/fonts
+sudo mv Descargas/JetBrainsMono /usr/share/fonts
+ls /usr/share/fonts
+exit
+exit
+nvim FMPIS-Arch/FMPIS-2.sh
+cd Documentos/Angular/airbnb-lint
+cd ../lint-test
+nvim .
+exit
+yay -Syu
+sudo flatpak update
+yay -Ss gnome-todo
+yay -Ss tasks
+yay -Ss notes
+exit
+cd Documentos/Angular/airbnb-lint
+nvim angular.json
+nvim package.json
+exit
+cd Documentos/Angular/airbnb-lint
+ls -a
+exit
+cd .config/nvim
+nvim .
+cd
+cd Documentos/Angular/airbnb-lint
+nvim .
+cd
+nvim ./config/nvim
+nvim .config/nvim
+cd Documentos/Angular/airbnb-lint
+nvim
+cd
+cd .config/nvim
+nvim lua/francisco/plugins/formatter.lua
+cd
+nvim .config/nvim/lua/francisco/plugins/formatter.lua
+cd Documentos/Angular/airbnb-lint
+nvim
+ls
+cd src/app/view/home
+ls
+nvim home.component.ts
+cd ../../..
+cd ..
+nvim
+cd
+cd .config/nvim
+nvim .
+nvim
+cd
+cd Documentos/Angular/airbnb-lint
+nvim
+cd
+nvim
+cd .config/nvim
+nvim .
+cd
+cd Documentos/Angular/airbnb-lint
+nvim .
+cd
+exit
+pass
+pass github
+update-configs
+cd FMPIS-Arch
+git status
+cd
+cd .config/nvim
+nvim .
+nvim .
+nvim .
+nvim .
+exit
+update-configs
+cd FMPIS-Arch
+ls
+git status
+git add -A
+git status
+ls configs/xdg_config_home/nvim
+ls configs/xdg_config_home/nvim/lua/francisco/plugins
+pass -c github
+git commit -m "Actualizacion 25 oct"
+git push origin
+pass -c github
+exit
+cd .config/nvim
+nvim .
+cd
+nvim
+cd FMPIS-Arch
+nvim
+cd
+cd Documentos/Angular/airbnb-lint
+ls -A
+cd ../lint-test
+ls -A
+nvim
+cd ../airbnb-lint
+nvim
+exit
+cd Documentos/Angular/airbnb-lint
+nvim .
+exit
+yay -Syu
+exit
+yay -Syu
+exit
+yt-dlp "https://www.xvideos.com/video78831993/chloe_bang_pilla_a_su_companero_de_cuarto_alex_legend_viendola_tomar_una_ducha_y_luego_le_deja_verla_masturbarse_-_mofos"
+yt-dlp "https://www.xvideos.com/video5312887/pareja_de_ebano_hacen_el_amor_naturalmente_"
+yt-dlp "https://www.xvideos.com/video78467993/migrante_venezolana_se_deja_cojer_el_culo_como_agradecimiento_por_dejarla_quedarse"
+yt-dlp "https://www.xvideos.com/video75974269/pareja_amateur_prueba_el_anal_por_primera_vez_-_a_ella_le_encanta"
+exit
+cd .config/nvim
+nvim .
+exit
+sudo flatpak update
+exit
+pass -c wifi
+exit
+cd Descargas
+git clone https://github.com/somepaulo/MoreWaita.git
+cd MoreWaita
+ls
+./install.sh
+exit
+pass -c Finanzas/banco-chile
+pass
+exit
+pass -c Finanzas/banco-chile
+pass -c Finanzas/banco-chile
+exit
+yay -Syu
+exit
+flatpak list
+sudo flatpak uninstall --delete-data me.iepure.Ticketbooth
+exit
+pass -c Finanzas/banco-chile
+exit
+pass Solem/rubrika-pin
+exit
+nvim
+cd .config/nvim
+nvim .
+exit
+pass -c claveunica
+pass -c claveunica
+yt-dlp "https://es.pornhub.com/view_video.php?viewkey=ph6333ab26292c8"
+exit
+yay -Syu
+exit
+pass
+exit
+nvim .config/nvim/lua/francisco/core/options.lua
+cd Documentos/Angular/lint-test
+nvim .
+nvim
+nvim .
+cd
+exit
+pass -c Finanzas/banco-chile
+yay -Ss gnome-fonts
+exit
+yay -Ss errand
+flatpak search errand
+sudo flatpak install io.github.mrvladus.List
+exit
+yay -Ss font-viewer
+yay -S gnome-font-viewer
+nvim FMPIS-Arch/FMPIS-2.sh
+flatpak list
+flatpak list
+nvim FMPIS-Arch/FMPIS-2.sh
+exit
+ping archlinux.org
+exit
+pass -c claveunica
+cd .config/nvim
+nvim .
+exit
+nvim
+exit
+sudo flatpak update
+exit
+nvim
+ls
+exit
+pass -c claveunica
+exit
+cd Documentos/E-Books/Robert\ Green
+nvim Las_48_leyes_del_poder_Robert_Greene.epub
+man zip
+ls
+zip -XO Las_48_leyes_del_poder_Robert_Greene.epub mimetype
+exir
+exit
+cd Documentos/E-Books/Robert\ Green
+ls
+man unzip
+unzip Las_48_leyes_del_poder_Robert_Greene.epub
+ls
+nvim OEBPS
+nvim OEBPS
+ls
+nvim mimetype
+zip -XO Las_48_leyes_del_poder_Robert_Greene.epub mimetype
+zip -XO Las_48_leyes_del_poder_Robert_Greene.epub mimetype
+ls -l
+chmod +w mimetype
+zip -XO Las_48_leyes_del_poder_Robert_Greene.epub mimetype
+ls
+ls -l
+chmod -w mimetype
+ls -l
+clear
+zip -X -O Las_48_leyes_del_poder_Robert_Greene.epub mimetype
+man zip
+zip add Las_48_leyes_del_poder.epub mimetype
+zip Las_48_leyes_del_poder_Robert_Greene.epub mimetype
+man zip
+zip -9Xru Las_48_leyes_del_poder_Robert_Greene.epub *
+nvim Las_48_leyes_del_poder_Robert_Greene.epub
+clear
+nvim OEBPS
+nvim OEBPS
+ls
+ls -l OEBPS
+ls -l OEBPS/Text
+chmod +w OEBPS/Text/*
+nvim OEBPS
+cd ~/.config/nvim/
+ls
+cd
+cd .local/share/nvim
+ls
+ls -a
+cd
+cd .cache/nvim
+ls
+cd
+cd Documentos/E-Books/Robert\ Green
+ls
+nvim OEBPS
+cd ~/.local/state/nvim
+ls
+ls swap
+rm -rf swap/*
+cd
+cd Documentos/E-Books/Robert\ Green
+nvim OEBPS
+exit
+htop
+exit
+nvim
+cd .config/nvim
+nvim .
+nvim .
+exit
+cd .local/bin
+ls
+touch bulk-rename
+chmod +x bulk-rename
+ls
+nvim bulk-rename
+nvim bulk-rename
+rm bulk-rename
+ls
+exit
+cd Vídeos/Shingeki\ No\ Kyojin/Season\ 1
+ls
+ls | sed "s/[Judas] //g"
+ls
+man sed
+nvim ~/.local/bin/albumtag
+nvim ~/.local/bin/albumtag
+ls | sed "s/\[Judas\] //g"
+ls | sed "s/\[Judas\] //g;s/\(S\d) - \(\d\d\)/\1E\2"
+ls | sed "s/\[Judas\] //g;s/\(S\d\) - \(\d\d\)/\1E\2"
+nvim ~/.local/bin/albumtag
+ls | sed "s/\[Judas\] //g;s/\(S\d\) - \(\d\d\)/\1E\2/g"
+ls | sed "s/\[Judas\] //g;s/\(S\d\) - \(\d\d\)/\1\2/g"
+ls | sed "s/\[Judas\] //g;s/\(S\d\) - \(\d\d\)/test\1\2/g"
+ls | sed "s/\[Judas\] //g;s/\(.\d\) - \(\d\d\)/test\1\2/g"
+ls | sed "s/\(.\d\) - \(\d\d\)/test\1\2/g"
+ls | sed "s/(.\d) - (\d\d)/test\1\2/g"
+ls | sed "s/(\[.*\])/asdf\1/g"
+ls | sed "s/\(\[.*\]\)/asdf\1/g"
+ls | sed "s/S1/S2/g"
+ls | sed "s/ - \(\d\d\)/S2/g"
+ls | sed "s/ - \(.*\)/S2/g"
+ls | sed "s/ - \(.*\)/\1/g"
+ls | sed "s/ - \(.*\)/E\1/g"
+ls | sed "s/ - \(.*\)/ - E\1/g"
+ls | sed "s/S1 - \(.*\)/s1e\1/g"
+ls | sed "s/S1 - \(.*\)/s1-e\1/g"
+ls | sed "s/S1 - \(.*\)/s1 - e\1/g"
+ls | sed "s/\[Judas\] //g;s/S1 - \(.*\)/s1 - e\1/g"
+nvim ~/.local/bin/albumtag
+nvim ~/.local/bin/manga-trim
+ls | sed "s/\[Judas\] //g;s/S1 - \(.*\)/s1 - e\1/g"
+cd ../Season\ 2
+ls
+cd ../Season\ 3
+ls
+cd ../Season\ 2
+ls
+ls | sed "s/\[BlurayDesuYo\] //g;s/(Season 2) - \(..\)/s2 - \1/g"
+ls | sed "s/\[BlurayDesuYo\] //g;s/(Season 2) - \(..\)/s2 - e\1/g"
+ls | sed "s/\[BlurayDesuYo\] //g;s/(Season 2) - \(..\)/s2 - e\1/g;s/(BD.*) \[.*\]//g"
+ls | sed "s/\[BlurayDesuYo\] //g;s/(Season 2) - \(..\)/s2 - e\1/g;s/ (BD.*) \[.*\]//g"
+nvim ~/.local/bin/albumtag
+man sed
+clear
+ls
+ls | sed "s/\[BlurayDesuYo\] //g;s/(Season 2) - \(..\)/s2 - e\1/g;s/ (BD.*) \[.*\]//g"
+cd ../Season\ 1
+ls | sed "s/\[Judas\] //g;s/S1 - \(.*\)/s1 - e\1/g"
+ls
+bulk-rename
+ls
+clear
+ls
+bulk-rename
+ls
+exit
+exit
+yay -Syu
+mangal
+man mangal
+mangal -h
+mangal -v
+mangal
+exit
+cd Documentos/Mangas
+ls
+manga-trim Boruto_Two_Blue_Vortex
+exit
+adb devices
+adb devices
+adb shell
+exit
+anime shingeki no kyojin
+anime shingeki no kyojin
+exit
+nvim
+mangal
+mangal
+yay -Ss tmux
+yay -S tmux
+exit
+exit
+exit
+nvim
+exit
+nvim
+exit
+exit
+exit
+cd .config/tmux
+ls
+exit
+exit
+exit
+cd Documentos/Angular/lint-test
+ng s
+exit
+cd Documentos/Angular/lint-test
+ng s
+exit
+cd Documentos/Angular/lint-test
+ng s
+exit
+cd Documentos/Vue/vue-test
+npm run dev
+exit
+cd Documentos/Vue
+ls
+cd vue-test
+nvim .
+nvim .
+exit
+nvim
+ls
+cd Documentos/Angular/lint-test
+ls
+nvim .
+exit
+exit
+exit
+nvim
+nvim .config/tmux/tmux.conf
+exit
+exit
+nvim
+exit
+exit
+exit
+exit
+nvim .config/tmux/tmux.conf
+exit
+exit
+nvim .config/tmux/tmux.conf
+exit
+tmux
+tmux
+man touch
+mkdir .config/tmux
+touch .config/tmux/tmux.conf
+tmux
+clear
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ls -a
+nvim .config/tmux/tmux.conf
+tmux
+tmux attach
+clear
+tmux
+tmux attach
+nvim .config/tmux/tmux.conf
+nvim
+tmux
+tmux
+tmux
+tmux
+tmux
+exit
+nvim
+exit
+nvim .config/tmux/tmux.conf
+exit
+exit
+exit
+exit
+exit
+nvim
+ls -a
+exit
+nvim .config/tmux/tmux.conf
+tmux
+tmux
+clear
+tmux
+exit
+pass -c Finanzas/banco-chile
+nvim .config/tmux/tmux.conf
+exit
+nvim .config/tmux/tmux.conf
+exit
+nvim .config/tmux/tmux.conf
+nvim .config/tmux/tmux.conf
+exit
+exit
+nvim .config/tmux/tmux.conf
+exit
+cd Documentos/Angular/lint-test
+nvim
+exit
+exit
+nvim .config/tmux/tmux.conf
+exit
+tmux
+nvim .config/tmux/tmux.conf
+tmux
+tmux
+tmux
+exit
+exit
+man tmux
+exit
+nvim .config/tmux/tmux.conf
+exit
+tmux attach
+tmux
+tmux attach
+exit
+exit
+exit
+exit
+nvim
+tmux attach
+tmux
+man tmux
+tmux
+tmux list-sessions
+tmux attach
+tmux list-sessions
+exit
+exit
+echo "Hola desde dentro"
+exit
+ng s
+exit
+cd Documentos/Angular/lint-test
+nvim
+exit
+exit
+exit
+exit
+tmux
+clear
+echo "Hola"
+tmux
+tmux
+tmux attach
+tmux list-sessions
+tmux attach
+tmux list-sessions
+exit
+tmux
+tmux
+tmux a
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+nvim .config/tmux/tmux.conf
+nvim .config/tmux/tmux.conf
+exit
+exit
+tmux a
+tmux a
+man tmux
+tmux a
+tmux a
+tmux a
+tmux a
+tmux list-sessions
+exit
+nvim .config/tmux/tmux.conf
+exit
+exit
+exit
+exit
+exit
+tmux a
+tmux
+tmux
+tmux list-sessions
+tmux a
+clear
+tmux a
+tmux a
+exit
+exit
+tmux
+ls
+nvim .local/bin/update-configs
+ls -a
+ls .tmux
+ls .tmux/plugins
+ls .tmux/plugins/tpm
+ls .config
+cd
+clear
+nvim .local/bin/update-configs
+exit
+update-configs
+cd FMPIS-Arch
+ls
+git status
+git add -A
+cd configs
+ls
+ls -a
+rm -rf .tmux
+ls
+cd ..
+git add -A
+git status
+pass -c github
+git commit -m "Actualizacion 27 nov"
+git push origin
+pass github
+cd
+pass -c github
+man unzip
+exit
+exit
+nvim ~/.local/bin/update-configs
+exit
+pass -c github
+pass -c github
+pass generate github
+pass -c github
+clear
+ls
+cd Documentos
+ls
+git clone https://github.com/francisco-morales97/dotfiles.git
+ls
+cd dotfiles
+ls
+cd
+nvim .local/bin/update-configs
+nvim .local/bin/update-configs
+man cp
+cd Documentos/dotfiles
+ls
+cd
+tmux a
+tmux a
+exit

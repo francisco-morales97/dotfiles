@@ -1,0 +1,79 @@
+return {
+    'neovim/nvim-lspconfig',
+    event = { 'BufReadPre', 'BufNewFile' },
+    dependencies = {
+        'hrsh7th/cmp-nvim-lsp',
+        { 'folke/neodev.nvim', config = true },
+    },
+    config = function()
+        local map = require('utils').map
+        local ui_border = require('utils').border
+        local lspconfig = require('lspconfig')
+        local cmp_nvim_lsp = require('cmp_nvim_lsp')
+
+        local on_attach = function(client, bufnr)
+            local opts = {
+                buffer = bufnr,
+                noremap = true,
+            }
+
+            map('n', 'gd', function() vim.lsp.buf.definition() end, 'Ir a definicion', opts)
+            map('n', 'K', function() vim.lsp.buf.hover() end, 'Muestra info en hover', opts)
+            map('n', 'gl', function() vim.diagnostic.open_float() end, 'Abre diagnostico en ventana flotante', opts)
+            map('n', '<leader>ca', function() vim.lsp.buf.code_action() end, 'Muestra acciones de codigo disponibles', opts)
+            map('n', 'gr', '<cmd>Telescope lsp_references<CR>', 'Muestra lista de referencias', opts)
+            map('n', '<leader>rn', function() vim.lsp.buf.rename() end, 'Renombra variable', opts)
+            map('n', '<leader>rs', '<cmd>LspRestart<CR>', 'Reinicia LSP', opts)
+        end
+
+        -- local ui_border = {
+        --     { "╭" },
+        --     { "─" },
+        --     { "╮" },
+        --     { "│" },
+        --     { "╯" },
+        --     { "─" },
+        --     { "╰" },
+        --     { "│" },
+        -- }
+
+        require('lspconfig.ui.windows').default_options.border = ui_border
+
+        local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
+
+        function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+            opts = opts or {}
+            opts.border = opts.border or ui_border
+            return orig_util_open_floating_preview(contents, syntax, opts, ...)
+        end
+
+        local capabilities = cmp_nvim_lsp.default_capabilities()
+        local servers = {
+            'angularls',
+            'tsserver',
+            'html',
+            'cssls',
+            'volar',
+            'lua_ls',
+        }
+
+        for _, lsp in pairs(servers) do
+            lspconfig[lsp].setup({
+                capabilities = capabilities,
+                on_attach = on_attach,
+            })
+        end
+
+        lspconfig['emmet_ls'].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+            filetypes = {
+                'html',
+                'css',
+                'scss',
+                'vue',
+                'php',
+            }
+        })
+    end
+}

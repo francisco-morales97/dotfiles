@@ -1,0 +1,32 @@
+return {
+    'williamboman/mason.nvim',
+    dependencies = 'williamboman/mason-lspconfig.nvim',
+    config = function()
+        local ui_border = require('utils').border
+        local mason = require('mason')
+        local mason_lsp = require('mason-lspconfig')
+
+        mason.setup({
+            ui = {
+                icons = {
+                    package_installed = "✓",
+                    package_pending = "➜",
+                    package_uninstalled = "✗",
+                },
+                border = ui_border
+            }
+        })
+
+        mason_lsp.setup({
+            ensure_installed = {
+                'html',
+                'cssls',
+                'emmet_ls',
+                'tsserver',
+                'angularls',
+                'volar',
+                'lua_ls',
+            }
+        })
+    end
+}

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Definicion de variables
+RED="\033[0;31m"
+BOLD="\033[1m"
+NC="\033[0m"
+
+[ ! -f "$1" ] && printf "${RED}${BOLD}Debes seleccionar un archivo${NC}\n" && exit
+
+nohup zathura "$1" > /dev/null &
