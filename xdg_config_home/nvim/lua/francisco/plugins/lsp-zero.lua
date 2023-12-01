@@ -95,6 +95,20 @@ return {
                 mapping = cmp.mapping.preset.insert({
                     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
                     ['<C-d>'] = cmp.mapping.scroll_docs(4),
+                    ['<C-p>'] = cmp.mapping(function()
+                        if cmp.visible() then
+                            cmp.select_prev_item({ behavior = 'select' })
+                        else
+                            cmp.complete()
+                        end
+                    end),
+                    ['<C-n>'] = cmp.mapping(function()
+                        if cmp.visible() then
+                            cmp.select_next_item({ behavior = 'select' })
+                        else
+                            cmp.complete()
+                        end
+                    end),
                 }),
                 sources = {
                     { name = 'nvim_lsp' },

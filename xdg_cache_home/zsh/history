@@ -1,392 +1,3 @@
-ls
-exit
-sudo flatpak update
-sudo flatpak uninstall --delete-data net.xmind.XMind
-exit
-nvim
-exit
-nvim FMPIS-Arch/FMPIS-2.sh
-flatpak list
-nvim FMPIS-Arch/FMPIS-2.sh
-clear
-update-configs
-cd FMPIS-Arch
-git status
-git add -A
-git status
-cd
-exit
-yay -Syu
-exit
-htop
-ls
-cd Descargas
-ls
-exit
-ls
-cd FMPIS-Arch
-git status
-pass -c github
-git commit -m "Actualizacion 20 oct"
-git push origin
-git status
-exit
-nvim
-ls
-exit
-yay -Ss screen
-exit
-ls
-exit
-exit
-cd Documentos/Angular/dashboard
-nvim .
-exit
-cd Documentos/Angular/dashboard
-nvim .
-exit
-matrix
-ping archlinux.org
-clear
-exit
-nvim
-exit
-nvim
-exit
-nvim
-exit
-exit
-exit
-nvim
-nvim .config/nvim/lua/francisco/plugins/treesitter.lua
-exit
-cd Documentos/Groff-docs/Clases-de-ingles
-ls
-nvim clase1.mom
-cd
-nvim .config/nvim/lua/francisco/plugins/lsp-zero.lua
-cd Documentos/Groff-docs/Clases-de-ingles
-nvim clase1.mom
-exit
-nvim
-exit
-cd Documentos/Angular/dashboard
-ls
-ls node_modules
-clear
-ls node_modules | grep "eslint"
-nvim
-nvim
-nvim .
-nvim .
-nvim
-nvim
-nvim
-nvim
-cd
-cd .config/nvim
-nvim .
-nvim .
-cd
-cd Documentos/Angular/dashboard
-nvim .
-nvim 
-npm init @eslint/config
-ls
-nvim 
-nvim
-cd ..
-ls
-cd map-api
-ls
-nvim .
-npm init @eslint/config
-ls
-nvim .
-exit
-cd .config/nvim
-nvim .
-exit
-cd Documentos/Angular/map-api
-nvim
-nvim ~/.config/nvim/lua/francisco/plugins/nvim-lint.lua
-nvim
-nvim
-nvim .eslintrc.js package.json
-ls
-cd ..
-ls
-ng new typescript-linter
-ls
-cd typescript-linter
-ls
-npm install ts-standard -D
-nvim
-nvim .
-nvim .
-nvim package.json
-nvim .
-npm lint
-npm run lint
-nvim
-nvim
-cd ..
-ls
-rm -rf typescript-linter
-ng new lint-test
-cd lint-test
-ls
-ls -a
-npm install eslint -D -E
-npm install eslint-config-airbnb-typescript \\
-            @typescript-eslint/eslint-plugin@^6.0.0 \\
-            @typescript-eslint/parser@^6.0.0 \\
-            --save-dev
-ls
-nvim .
-nvim
-npm info "eslint-config-airbnb-base@latest" peerDependencies
-npm install eslint-config-airbnb-base -E -D
-nvim package.json
-npm install eslint-config-airbnb-base -E -D
-nvim package.json
-npm install eslint-config-airbnb-base -E -D
-nvim .
-nvim
-ls
-cd ..
-ls
-rm -rf lint-test
-ls
-ng new lint-test
-cd lint-test
-ls
-npm init @eslint/config
-ls
-ls -a
-npx install-peerdeps --dev eslint-config-airbnb-base
-npm --version
-npx install-peerdeps --dev eslint-config-airbnb-base
-npm info "eslint-config-airbnb-base@latest" peerDependencies
-npm install eslint-config-airbnb-base -E -D
-nvim .eslintrc.json
-npm install eslint-config-airbnb-typescript @typescript-eslint/eslint-plugin@^6.0.0 @typescript-eslint/parser@^6.0.0 -D
-nvim .
-nvim .
-npm run lint
-nvim package.json
-npx eslint . --ext .js,.jsx,.ts,.tsx
-nvim .eslintrc.json
-nvim .eslintrc.json
-npx eslint . --ext .js,.jsx,.ts,.tsx
-nvim .eslintrc.json
-npx eslint . --ext .js,.jsx,.ts,.tsx
-nvim .eslintrc.json
-npx eslint . --ext .js,.jsx,.ts,.tsx
-nvim .eslintrc.json
-npx eslint . --ext .js,.jsx,.ts,.tsx
-nvim tsconfig.
-nvim tsconfig.json
-ls
-nvim .eslintrc.json
-cd ..
-rm -rf lint-test
-ls
-ng new lint-test
-ls
-cd lint-test
-ls
-npm install eslint -D -E
-npx eslint --init
-ls
-nvim .
-nvim .
-ls
-cd ..
-cd ..
-ls
-cd Vue
-ls
-cd vue-test
-ls
-ls -a
-npm init @eslint/config
-nvim .
-npm init @eslint/config
-npm init @eslint/config
-npm init @eslint/config
-cd ..
-cd ../Angular/lint-test
-clear
-ls -a
-nvim .
-ls
-nvim .eslintrc.json
-npm install prettier -E -D
-npm install eslint-config-prettier -D -E
-nvim .eslintrc.json
-ls -a
-nvim .
-npx eslint-config-prettier src/app/app.component.ts
-npx eslint . --ext .js,.jsx,.ts,.tsx
-nvim .
-cd ..
-rm -rf lint-test
-ls
-ng new lint-test
-cd lint-test
-ls
-ls
-npm init @eslint/config
-npm init @eslint/config
-npx install-peerdeps --dev eslint-config-airbnb-base
-clear
-ls -a
-(\
-  export PKG=eslint-config-airbnb-base;\
-  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"\
-)
-ls -a
-nvim package.json
-ls -a
-nvim .eslintrc.json
-nvim .
-nvim .
-nvim .eslintrc.json
-nvim .eslintrc.json
-ls
-npm install eslint-config-airbnb-typescript \\
-            @typescript-eslint/eslint-plugin@^6.0.0 \\
-            @typescript-eslint/parser@^6.0.0 \\
-            --save-dev
-ls -a
-nvim .eslintrc.json
-npx eslint . --ext .js,.jsx,.ts,.tsx
-nvim .
-nvim .
-nvim package.json
-nvim
-nvim .
-nvim
-nvim .
-npm install prettier eslint-config-prettier -D
-nvim .eslintrc.json
-nvim
-nvim .
-nvim .
-nvim .
-nvim .
-nvim .
-nvim .
-nvim .
-nvim .
-nvim .
-nvim .
-clear
-ls
-nvim src/app/app.component.ts
-nvim .
-exit
-cd Documentos/Angular/lint-test
-nvim
-cd ..
-ls
-rm -rf lint-test
-ng new lint-test
-ls
-cd lint-test
-ls
-npm init @eslint/config
-npm install prettier eslint-config-prettier -D
-nvim .
-nvim .
-nvim .
-nvim .
-nvim .
-nvim .
-nvim ~/.config/nvim/lua/francisco/plugins/format.lua
-nvim .
-nvim .
-nvim .
-exit
-cd Documentos/Angular/lint-test
-nvim package.json
-nvim .
-cd ..
-ls
-ng new airbnb-lint
-cd airbnb-lint
-ls
-npm info "eslint-config-airbnb-base@latest" peerDependencies
-npm install eslint-config-airbnb-base eslint-plugin-import eslint -D
-ls -a
-npx eslint .
-touch .eslintrc.json
-ls
-ls -a
-nvim .eslintrc.json
-npm install eslint-config-airbnb-typescript \\
-            @typescript-eslint/eslint-plugin@^6.0.0 \\
-            @typescript-eslint/parser@^6.0.0 \\
-            -D
-ls -A
-cat .eslintrc.json
-nvim .eslintrc.json
-npx eslint .
-nvim .
-nvim .
-exit
-cd Documentos/Angular/airbnb-lint
-ls
-nvim .eslintrc.json
-cd ..
-ls
-cd lint-test
-nvim .
-exit
-pass
-exit
-nvim
-cd Documentos/Angular/airbnb-lint
-ls
-npm install prettier -D
-ls
-nvim .
-node --eval "fs.writeFileSync('.prettierrc','{}\n')"
-ls -a
-cat .prettierrc
-clear
-ls -a
-nvim .
-npx prettier --check
-npx prettier . --check
-nvim .prettierignore
-nvim .
-cd
-nvim 
-cd Documentos/Angular/airbnb-lint
-nvim .
-exit
-nvim .config/nvim/lua/francisco/plugins/lsp-zero.lua
-cd Documentos/Angular/airbnb-lint
-nvim .
-cd
-nvim .config/nvim/lua/francisco/plugins/lualine.lua
-nvim .config/nvim/lua/francisco/plugins/lualine.lua
-nvim .config/nvim/lua/francisco/plugins/lualine.lua
-nvim .config/nvim/lua/francisco/plugins/lsp-zero.lua
-exit
-cd Documentos/Angular/airbnb-lint
-nvim .eslintrc.json
-cd ../lint-test
-nvim .eslintrc.json
-exit
-nvim
-nvim .config/nvim/lua/francisco/plugins/linter.lua
-nvim .config/nvim/lua/francisco/plugins/linter.lua
-nvim .config/nvim/lua/francisco/plugins/linter.lua
-exit
-nvim .config/nvim/lua/francisco/core/keymaps.lua
 cd Documentos/Angular/airbnb-lint
 nvim .
 exit
@@ -1009,4 +620,381 @@ ls
 cd
 tmux a
 tmux a
+exit
+cd ../Documentos/dot
+cd ../Documentos/dotfiles
+ls
+nvim install
+chmod +x install
+ls
+nvim install
+nvim install
+ls
+rm install
+chmod +x install.sh
+ls
+nvim install.sh
+git status
+git add -A
+git status
+git commit -m "Primera actualizacion de dotfiles"
+git status
+pass -c github
+git push origin
+git config user.name
+git config user.email
+git config --global user.name "francisco-morales97"
+git config user.name
+pass insert github-token
+pass github-token
+pass -c github-token
+git push origin
+pass -c github-token
+git status
+git push origin
+pass -c github-token
+git push origin
+pass -c github-token
+git push origin main
+cd
+exit
+nvim .config/tmux/tmux.conf
+clear
+cd Documentos/dotfiles
+ls
+mkdir xdg_config_home xdg_cache_home xdg_data_home
+ls
+pwd
+update-configs
+git status
+git add -A
+git status
+ls
+cd
+ls
+cd FMPIS-Arch
+ls
+rm -rf configs
+ls
+nvim .
+ls
+git add -A
+git status
+git commit -m "Actualizacion 27 nov"
+git status
+cd
+clear
+nvim .config/nvim/lua/utils.lua
+exit
+tmux a
+exit
+pass -c claveunica
+pass -c claveunica
+htop
+exit
+books
+cd Aristóteles
+ls
+cd ..
+ls
+cd Isaac\ Asimov
+ls
+nvim Fundacion_Isaac_Asimov.epub
+exit
+nvim .config/nvim
+nvim
+nvim
+ls
+ls -A
+nvim .config/nvim
+nvim .config/nvim
+nvim .config/nvim
+nvim .config/nvim
+nvim .config/nvim
+exit
+books
+cd Robert\ Green
+ls
+nvim OEBPS
+exit
+nvim .config/zsh/.zshrc
+books
+ls
+cd
+cd Descargas
+ls
+cp PROPUESTA-DE-NUEVA-CONSTITUCION-POLITICA-DE-LA-REPUB-LICA.epub ~/Documentos/E-Books
+books
+ls
+zathura PROPUESTA-DE-NUEVA-CONSTITUCION-POLITICA-DE-LA-REPUB-LICA.epub
+zathura PROPUESTA-DE-NUEVA-CONSTITUCION-POLITICA-DE-LA-REPUB-LICA.epub
+mkdir 'Consejo Constitucional'
+mv PROPUESTA-DE-NUEVA-CONSTITUCION-POLITICA-DE-LA-REPUB-LICA.epub Consejo\ Constitucional
+ls
+cd Consejo\ Constitucional
+ls
+unzip PROPUESTA-DE-NUEVA-CONSTITUCION-POLITICA-DE-LA-REPUB-LICA.epub
+ls
+cd ../Convencion\ Constituyente
+ls
+ls
+nvim Propuesta\ de\ la\ Nueva\ Constitucion\ -\ Convencion\ Constitucional.epub
+cd ../Consejo\ Constitucional
+ls
+ls
+unzip PROPUESTA-DE-NUEVA-CONSTITUCION-POLITICA-DE-LA-REPUB-LICA.epub
+ls
+nvim OEBPS
+tmux ls
+cd
+tmux
+exit
+cd Documentos/Angular/lint-test
+nvim .
+cd
+nvim .config/nvim
+cd Documentos/Angular/lint-test
+nvim .
+cd
+nvim .config/nvim
+nvim
+exit
+cd Documentos/dotfiles
+ls
+git status
+nvim .
+git status
+clear
+pass -c github-token
+git push origin
+pass -c github
+cd
+pass -c github-token
+git config --global credential.helper store
+git pull
+ls
+cd Documentos/dotfiles
+pass -c github-token
+git config --global credential.helper store
+pass -c github-token
+git push origin
+ls
+git config --global credential.helper store
+git pull
+cd
+ls -a
+nvim .git-credentials
+cd Documentos/dotfiles
+ls -a
+cd
+cd FMPIS-Arch
+ls
+git status
+nvim .
+nvim FMPIS-3.sh
+git remote add origin https://github.com/francisco-morales97/FMPIS-Arch.git
+git remote set-url origin https://github.com/francisco-morales97/FMPIS-Arch.git
+git push origin
+git pull origin
+git status
+git config pull.rebase true
+git status
+git pull origin
+git status
+ls
+git rebase --abort
+ls
+nvim
+git status
+ls
+nvim FMPIS-3.sh
+ls
+git status
+git commit -m "Corrige conflicto para rebase"
+git status
+git commit --amend
+git rebase --continue
+ls
+nvim README.md
+git status
+ls -a
+cd .got
+cd .git
+ls
+nvim REBASE_HEAD
+cd ..
+git branch
+git status
+git log
+git reflog
+git reset --hard HEAD@{6}
+git status
+ls
+git push origin
+ls
+nvim README.md
+git pull
+ls
+nvim .
+git rebase --abort
+ls
+nvim .
+git status
+git push --set-upstream origin develop
+git status
+git push origin main
+git pull
+ls
+git rebase --abort
+ls
+cd
+nvim .gitconfig
+cd Documentos/dotfiles
+git status
+nvim .
+cd ..
+cd
+cd FMPIS-Arch
+git status
+ls
+git pull --rebase origin main
+ls
+git
+git status
+git rebase --abort
+ls
+ls -a
+nvim .gitmodules
+git config pull.rebase false
+git pull --rebase origin main
+git rebase --abort
+nvim FMPIS-3.sh
+git reflog
+git pull origin
+git pull origin main
+ls
+git pull --rebase origin
+git diff --name-only --diff-filter=U
+nvim FMPIS-3.sh
+git status
+git add FMPIS-3.sh
+git status
+git rebase --continue
+ls
+git reflog
+git reset --hard HEAD@{18}
+ls
+git remote set-url origin https://github.com/francisco-morales97/FMPIS-Arch.git
+git pull origin
+git push origin main
+ls
+cd ..
+cd FMPIS-Arch
+nvim .gitignore
+ls
+git status
+git add -A
+git commit -m "Actualizacion 29 nov"
+git push origin main
+cd
+exit
+cd Documentos/Angular
+ls
+cd lint-test
+ls -a
+nvim package.json
+cd ..
+ng new lint-ts
+ls
+ng new lint-ts
+cd lint-ts
+ls
+npm init @eslint/config
+ls
+ls -a
+nvim .eslintrc.json
+npx eslint .
+npx eslint . --fix
+nvim .
+cd
+exit
+nvim
+tmux a
+exit
+cd ../lint-test
+nvim .eslintrc.json
+cd ../airbnb-lint
+nvim .eslintrc.json
+exit
+cd Documentos/Angular/lint-ts
+ls
+nvim .eslintrc.json
+cd
+nvim .config/nvim
+cd Documentos/Angular/lint-ts
+nvim .
+cd
+cd FMPIS-Arch
+nvim .
+exit
+cd Documentos/Angular/lint-ts
+ls
+nvim .
+cd
+tmux a
+exit
+pass Solem/rubrika-pin
+cd FMPIS-Arch
+cd ..
+rm -rf FMPIS-Arch
+ls
+cd Documentos
+git clone https://github.com/francisco-morales97/FMPIS-Arch.git
+ls
+cd dotfiles
+ls
+nvim .
+cd
+nvim .config/tmux/tmux.conf
+exit
+yt-dlp "https://es.pornhub.com/view_video.php?viewkey=ph623a8ea1a8eea"
+ls
+mv ROXY\ BUGATTI\ THE\ FAMOUS\ ESCORT\ GETTING\ FUCKED\ IN\ HER\ TIGHT\ BIG\ ASS\ \!\ \[ph623a8ea1a8eea\].mp4 Vídeos/.porno
+exit
+cd Documentos/Angular/lint-ts
+nvim .
+exit
+nvim .config/nvim
+tmux a
+nvim .local/bin/update-configs
+update-configs
+exit
+exit
+man mpv
+exit
+man mpv
+exit
+nvim
+nvim
+exit
+man tmux
+exit
+nvim .config/tmux/tmux.conf
+exit
+cd Documentos/Angular/lint-ts
+nvim .
+ exit
+nvim
+exit
+nvim .config/nvim
+cd Documentos/Angular/lint-ts
+nvim .
+cd
+nvim .config/nvim
+nvim
+cd Documentos/Angular/lint-ts
+nvim l
+nvim .
+nvim .
+cd
 exit
