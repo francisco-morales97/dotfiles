@@ -1,132 +1,3 @@
-cd Documentos/Angular/airbnb-lint
-nvim .
-exit
-nvim
-exit
-nvim .config/nvim/lua/francisco/core/keymaps.lua
-nvim .config/nvim/lua/francisco/core/keymaps.lua
-cd Documentos/Angular/airbnb-lint
-nvim .
-exit
-exit
-nvim FMPIS-Arch/FMPIS-2.sh
-yay -Rs ttf-jetbrains-mono-nerd
-exit
-nvim FMPIS-Arch/FMPIS-2.sh
-exit
-ls /usr/share/fonts
-sudo mv Descargas/JetBrainsMono /usr/share/fonts
-ls /usr/share/fonts
-exit
-exit
-nvim FMPIS-Arch/FMPIS-2.sh
-cd Documentos/Angular/airbnb-lint
-cd ../lint-test
-nvim .
-exit
-yay -Syu
-sudo flatpak update
-yay -Ss gnome-todo
-yay -Ss tasks
-yay -Ss notes
-exit
-cd Documentos/Angular/airbnb-lint
-nvim angular.json
-nvim package.json
-exit
-cd Documentos/Angular/airbnb-lint
-ls -a
-exit
-cd .config/nvim
-nvim .
-cd
-cd Documentos/Angular/airbnb-lint
-nvim .
-cd
-nvim ./config/nvim
-nvim .config/nvim
-cd Documentos/Angular/airbnb-lint
-nvim
-cd
-cd .config/nvim
-nvim lua/francisco/plugins/formatter.lua
-cd
-nvim .config/nvim/lua/francisco/plugins/formatter.lua
-cd Documentos/Angular/airbnb-lint
-nvim
-ls
-cd src/app/view/home
-ls
-nvim home.component.ts
-cd ../../..
-cd ..
-nvim
-cd
-cd .config/nvim
-nvim .
-nvim
-cd
-cd Documentos/Angular/airbnb-lint
-nvim
-cd
-nvim
-cd .config/nvim
-nvim .
-cd
-cd Documentos/Angular/airbnb-lint
-nvim .
-cd
-exit
-pass
-pass github
-update-configs
-cd FMPIS-Arch
-git status
-cd
-cd .config/nvim
-nvim .
-nvim .
-nvim .
-nvim .
-exit
-update-configs
-cd FMPIS-Arch
-ls
-git status
-git add -A
-git status
-ls configs/xdg_config_home/nvim
-ls configs/xdg_config_home/nvim/lua/francisco/plugins
-pass -c github
-git commit -m "Actualizacion 25 oct"
-git push origin
-pass -c github
-exit
-cd .config/nvim
-nvim .
-cd
-nvim
-cd FMPIS-Arch
-nvim
-cd
-cd Documentos/Angular/airbnb-lint
-ls -A
-cd ../lint-test
-ls -A
-nvim
-cd ../airbnb-lint
-nvim
-exit
-cd Documentos/Angular/airbnb-lint
-nvim .
-exit
-yay -Syu
-exit
-yay -Syu
-exit
-yt-dlp "https://www.xvideos.com/video78831993/chloe_bang_pilla_a_su_companero_de_cuarto_alex_legend_viendola_tomar_una_ducha_y_luego_le_deja_verla_masturbarse_-_mofos"
-yt-dlp "https://www.xvideos.com/video5312887/pareja_de_ebano_hacen_el_amor_naturalmente_"
-yt-dlp "https://www.xvideos.com/video78467993/migrante_venezolana_se_deja_cojer_el_culo_como_agradecimiento_por_dejarla_quedarse"
 yt-dlp "https://www.xvideos.com/video75974269/pareja_amateur_prueba_el_anal_por_primera_vez_-_a_ella_le_encanta"
 exit
 cd .config/nvim
@@ -997,4 +868,133 @@ nvim l
 nvim .
 nvim .
 cd
+exit
+pass -c Finanzas/banco-chile
+update-configs
+cd Documentos/dotfiles
+ls
+git status
+git add -A
+git commit -m "Actualizacion 1 dic"
+git push origin main
+exit
+yay -Ss locate
+exit
+yay -Ss fzf
+fzf --version
+man fzf
+fzf
+fzf app.component
+exit
+sudo systemctl restart NetworkManager.service
+exit
+books
+ls
+cd Consejo\ Constitucional
+nvim OEBPS
+nvim OEBPS
+fg
+fg
+fg
+nvim OEBPS
+nvim OEBPS
+nvim OEBPS
+nvim .config/tmux/tmux.conf
+exit
+exit
+exit
+exit
+tmux a
+tmux
+exit
+nvim
+exit
+exit
+exit
+cd Descargas
+cd firefox-gnome-theme
+git pull origin
+ls
+cd scripts
+ls
+./install.sh
+exit
+man xargs
+exit
+systemctl status NetworkManager
+sudo systemctl restart NetworkManager
+exit
+htop
+exit
+exit
+nvim .config/tmux/tmux.conf
+exit
+exit
+nvim .config/tmux/tmux.conf
+exit
+exit
+exit
+nvim .config/tmux/tmux.conf
+cd Documentos/Angular/lint-ts
+nvim 
+exit
+nvim .config/tmux/tmux.conf
+update-configs
+cd Documentos/dotfiles
+git status
+pass -c github-token
+git add -A
+git status
+git commit -m "Actualizacion 8 dic"
+cd
+exit
+tmux a
+nvim .config/tmux/tmux.conf
+tmux
+tmux
+update-configs
+cd Documentos/dotfiles
+ls
+git status
+nvim 
+cd
+tmux
+exit
+exit
+nvim .config/tmux/tmux.conf
+cd Descargas
+ls
+git clone https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized.git
+ls
+cat ~/.git-credentials
+cd SFMono-Nerd-Font-Ligaturized
+ls
+mkdir SF-Mono-Nerd-Font
+mv *.otf SF-Mono-Nerd-Font
+sudo mv SF-Mono-Nerd-Font /usr/share/fonts
+cd
+exit
+tmux
+exit
+exit
+nvim .config/tmux/tmux.conf
+exit
+tmux
+exit
+yay -S lsd
+lsd
+ls
+lsd
+cd Documentos/dotfiles
+lsd
+cd ..
+cd Angular/lint-ts
+lsd
+lsd -a
+lsd -al
+lsd --tree
+cd
+nvim .config/zsh/.zshrc
+lsd 
+nvim .config/zsh/.zshrc
 exit

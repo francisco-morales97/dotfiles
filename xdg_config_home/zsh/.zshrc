@@ -56,7 +56,8 @@ fi
 
 # Sección de aliases
 alias matrix="cmatrix -ab"
-alias ls="ls --color=always"
+# alias ls="ls --color=always"
+alias ls="lsd"
 alias grep="grep --color=always"
 alias mpv="mpv --profile=480p"
 alias etags="EDITOR=$EDITOR opustags --in-place --edit"
