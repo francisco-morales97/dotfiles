@@ -1,78 +1,3 @@
-yt-dlp "https://www.xvideos.com/video75974269/pareja_amateur_prueba_el_anal_por_primera_vez_-_a_ella_le_encanta"
-exit
-cd .config/nvim
-nvim .
-exit
-sudo flatpak update
-exit
-pass -c wifi
-exit
-cd Descargas
-git clone https://github.com/somepaulo/MoreWaita.git
-cd MoreWaita
-ls
-./install.sh
-exit
-pass -c Finanzas/banco-chile
-pass
-exit
-pass -c Finanzas/banco-chile
-pass -c Finanzas/banco-chile
-exit
-yay -Syu
-exit
-flatpak list
-sudo flatpak uninstall --delete-data me.iepure.Ticketbooth
-exit
-pass -c Finanzas/banco-chile
-exit
-pass Solem/rubrika-pin
-exit
-nvim
-cd .config/nvim
-nvim .
-exit
-pass -c claveunica
-pass -c claveunica
-yt-dlp "https://es.pornhub.com/view_video.php?viewkey=ph6333ab26292c8"
-exit
-yay -Syu
-exit
-pass
-exit
-nvim .config/nvim/lua/francisco/core/options.lua
-cd Documentos/Angular/lint-test
-nvim .
-nvim
-nvim .
-cd
-exit
-pass -c Finanzas/banco-chile
-yay -Ss gnome-fonts
-exit
-yay -Ss errand
-flatpak search errand
-sudo flatpak install io.github.mrvladus.List
-exit
-yay -Ss font-viewer
-yay -S gnome-font-viewer
-nvim FMPIS-Arch/FMPIS-2.sh
-flatpak list
-flatpak list
-nvim FMPIS-Arch/FMPIS-2.sh
-exit
-ping archlinux.org
-exit
-pass -c claveunica
-cd .config/nvim
-nvim .
-exit
-nvim
-exit
-sudo flatpak update
-exit
-nvim
-ls
 exit
 pass -c claveunica
 exit
@@ -997,4 +922,79 @@ cd
 nvim .config/zsh/.zshrc
 lsd 
 nvim .config/zsh/.zshrc
+exit
+ls
+ls -al
+update-configs
+cd Documentos/dotfiles
+ls
+git status
+git add -A
+ls
+git add -A
+git status
+git commit --amend --no-edit
+git status
+git push origin
+git status
+cd
+exit
+cd Documentos/dotfiles
+nvim install.sh
+ls
+ls -a
+ls bin
+cd
+exit
+nvim .config/zsh/.zshrc
+exit
+tmux new -s Test
+exit
+nvim .config/zsh/.zshrc
+exit
+tmux ls
+exit
+nvim .config/zsh/.zshrc
+exit
+nvim
+ls
+ls
+nvim .config/zsh/.zshrc
+afetch
+tmux
+exit
+pass -c github-token
+nvim .git-credentials
+cd .config
+ls
+ls tmux
+cd
+nvim .local/bin/update-configs
+cd Documentos/dotfiles
+nvim install.sh
+cd
+nvim Documentos/dotfiles/install.sh
+cd Documentos/dotfiles
+git status
+git add -A
+cd
+exit
+nvim .config/nvim
+nvim
+nvim .config/nvim
+cd Documentos/Angular/lint-ts
+nvim .
+cd
+clear
+nvim .config/nvim
+exit
+yay -Syu
+exit
+nvim Documentos/FMPIS-Arch/FMPIS-2.sh
+exit
+sudo flatpak update
+mirror-refresh
+sudo paccache -rk 0
+exit
+htop
 exit

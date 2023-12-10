@@ -11,6 +11,7 @@ opt.confirm = true
 opt.termguicolors = true
 opt.clipboard:append('unnamedplus')
 opt.iskeyword:append('-')
+opt.keywordprg = ':help'
 opt.mouse = 'a'
 
 opt.colorcolumn = '80'
@@ -19,12 +20,6 @@ opt.laststatus = 3
 opt.number = true
 opt.relativenumber = true
 opt.scrolloff = 8
-
-opt.foldcolumn = '1'
-opt.foldlevel = 20
-opt.foldmethod = 'expr'
-opt.foldexpr = 'nvim_treesitter#foldexpr()'
-opt.foldenable = false
 
 opt.tabstop = 4
 opt.shiftwidth = 4
