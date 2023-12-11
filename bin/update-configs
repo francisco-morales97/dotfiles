@@ -18,7 +18,6 @@ cp -rf $XDG_DATA_HOME/pass ~/Documentos/dotfiles/xdg_data_home/
 cp $HOME/.zshenv ~/Documentos/dotfiles/
 cp -rf $XDG_CONFIG_HOME/zathura ~/Documentos/dotfiles/xdg_config_home/
 cp -rf $XDG_CONFIG_HOME/zsh ~/Documentos/dotfiles/xdg_config_home/
-cp -rf $XDG_CACHE_HOME/zsh ~/Documentos/dotfiles/xdg_cache_home/
 cp -rf $XDG_CONFIG_HOME/mangal ~/Documentos/dotfiles/xdg_config_home/
 
 printf "${GREEN}${BOLD}Proceso finalizado${NC}\n"
