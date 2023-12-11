@@ -1,65 +1,3 @@
-exit
-pass -c claveunica
-exit
-cd Documentos/E-Books/Robert\ Green
-nvim Las_48_leyes_del_poder_Robert_Greene.epub
-man zip
-ls
-zip -XO Las_48_leyes_del_poder_Robert_Greene.epub mimetype
-exir
-exit
-cd Documentos/E-Books/Robert\ Green
-ls
-man unzip
-unzip Las_48_leyes_del_poder_Robert_Greene.epub
-ls
-nvim OEBPS
-nvim OEBPS
-ls
-nvim mimetype
-zip -XO Las_48_leyes_del_poder_Robert_Greene.epub mimetype
-zip -XO Las_48_leyes_del_poder_Robert_Greene.epub mimetype
-ls -l
-chmod +w mimetype
-zip -XO Las_48_leyes_del_poder_Robert_Greene.epub mimetype
-ls
-ls -l
-chmod -w mimetype
-ls -l
-clear
-zip -X -O Las_48_leyes_del_poder_Robert_Greene.epub mimetype
-man zip
-zip add Las_48_leyes_del_poder.epub mimetype
-zip Las_48_leyes_del_poder_Robert_Greene.epub mimetype
-man zip
-zip -9Xru Las_48_leyes_del_poder_Robert_Greene.epub *
-nvim Las_48_leyes_del_poder_Robert_Greene.epub
-clear
-nvim OEBPS
-nvim OEBPS
-ls
-ls -l OEBPS
-ls -l OEBPS/Text
-chmod +w OEBPS/Text/*
-nvim OEBPS
-cd ~/.config/nvim/
-ls
-cd
-cd .local/share/nvim
-ls
-ls -a
-cd
-cd .cache/nvim
-ls
-cd
-cd Documentos/E-Books/Robert\ Green
-ls
-nvim OEBPS
-cd ~/.local/state/nvim
-ls
-ls swap
-rm -rf swap/*
-cd
 cd Documentos/E-Books/Robert\ Green
 nvim OEBPS
 exit
@@ -997,4 +935,66 @@ mirror-refresh
 sudo paccache -rk 0
 exit
 htop
+exit
+nvim
+nvim .config/nvim/lua/francisco/core/options.lua
+nvim .config/nvim/lua/francisco/core/options.lua
+update-configs
+cd Documentos/dotfiles
+ls
+cd
+ls
+ls Documentos
+touch Documentos/testing
+echo "Prueba de reemplazo" > testing
+ls
+cat testing
+mv testing Documentos
+cd Documentos
+ls
+cat testing
+cd
+echo "Prueba de reemplazo 2" > testing
+cat testing
+mv testing Documentos
+cat Documentos/testing
+ls Documentos
+rm Documentos/testing
+ls Documentos
+echo "Prueba de reemplazo 2" > testing
+ls
+rm testing
+exit
+cd Documentos/dotfiles
+git status
+git add -A
+git status
+git commit -m "Acutalizacion 10 dic"
+git push origin
+exit
+man df
+df -h
+nvim .local/bin/albumtag
+nvim .config/nvim/lua/utils.lua
+nvim .config/nvim/lua/utils.lua
+nvim .config/nvim/lua/utils.lua
+nvim .config/nvim/lua/utils.lua
+nvim .config/nvim/lua/utils.lua
+nvim .config/nvim/lua/utils.lua
+nvim .config/nvim/lua/utils.lua
+nvim .config/nvim/lua/utils.lua
+exit
+ping archlinux.org
+ping archlinux.org
+exit
+cd Descargas
+git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
+exit
+sudo mv Descargas/San-Francisco-Pro-Fonts /usr/share/fonts
+exit
+yay -Ss arc
+yay -Ss arc-browser
+df -h
+exit
+pass -c Finanzas/banco-chile
 exit
