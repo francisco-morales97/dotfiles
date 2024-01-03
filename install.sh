@@ -20,13 +20,6 @@ fi
 
 rsync -a xdg_config_home/* ~/.config/
 rsync -a xdg_data_home/* ~/.local/share/
-
-if [ -e ~/.cache ]; then
-    rsync -a xdg_cache_home/* ~/.cache/
-else
-    mkdir ~/.cache
-    rsync -a xdg_cache_home/* ~/.cache/
-fi
 echo
 
 printf "${GREEN}${BOLD}Las configuraciones han sido transferidas${NC}\n"
