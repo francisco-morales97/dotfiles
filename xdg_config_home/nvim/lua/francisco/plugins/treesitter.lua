@@ -6,16 +6,18 @@ return {
     config = function()
         require('nvim-treesitter.configs').setup({
             ensure_installed = {
+                'angular',
                 'css',
-                'scss',
                 'html',
-                'json',
                 'javascript',
+                'json',
                 'lua',
+                'markdown',
                 'regex',
+                'scss',
                 'typescript',
                 'vim',
-                'vue'
+                'vue',
             },
             highlight = {
                 enable = true,
@@ -30,8 +32,10 @@ return {
                     keymaps = {
                         ["af"] = "@function.outer",
                         ["if"] = "@function.inner",
-                        ["ac"] = "@class.outer",
-                        ["ic"] = "@class.inner",
+                        ["ac"] = "@conditional.outer",
+                        ["ic"] = "@conditional.inner",
+                        ["al"] = "@loop.outer",
+                        ["il"] = "@loop.inner",
                     },
                     selection_modes = {
                         ['@parameter.outer'] = 'v', -- charwise

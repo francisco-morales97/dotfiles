@@ -100,14 +100,14 @@ return {
                     ['<C-d>'] = cmp.mapping.scroll_docs(4),
                     ['<C-p>'] = cmp.mapping(function()
                         if cmp.visible() then
-                            cmp.select_prev_item({ behavior = 'select' })
+                            cmp.select_prev_item({ behavior = cmp.SelectBehavior.Insert })
                         else
                             cmp.complete()
                         end
                     end),
                     ['<C-n>'] = cmp.mapping(function()
                         if cmp.visible() then
-                            cmp.select_next_item({ behavior = 'select' })
+                            cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
                         else
                             cmp.complete()
                         end
@@ -228,9 +228,16 @@ return {
                     'angularls',
                     'volar',
                     'lua_ls',
+                    'marksman'
                 },
                 handlers = {
                     lsp_zero.default_setup,
+                    angularls = function()
+                        require('lspconfig').angularls.setup({
+                            root_dir = require('lspconfig.util').root_pattern("angular.json", "project.json"),
+                            filetypes = { "angular", "html", "typescript", "typescriptreact", "typescript.tsx" },
+                        })
+                    end
                 }
             })
         end

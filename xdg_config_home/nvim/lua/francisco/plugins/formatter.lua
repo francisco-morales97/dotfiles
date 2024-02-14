@@ -24,7 +24,6 @@ return {
                 vue = { 'eslint_d' },
                 css = { 'prettier' },
                 scss = { 'prettier' },
-                html = { 'prettier' }
             },
             format_on_save = format_opts,
         })
