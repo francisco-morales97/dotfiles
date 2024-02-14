@@ -9,12 +9,11 @@ NC="\033[0m"
 printf "${BOLD}Copiando archivos de configuración...${NC}\n"
 
 # cp -rf $XDG_CONFIG_HOME/alacritty ~/FMPIS-Arch/configs/xdg_config_home/
-cp -rf ~/.local/bin ~/Documentos/dotfiles
+cp -rf $HOME/.local/bin ~/Documentos/dotfiles
 cp -rf $XDG_CONFIG_HOME/tmux/tmux.conf ~/Documentos/dotfiles/xdg_config_home/
 cp -rf $XDG_CONFIG_HOME/mpv ~/Documentos/dotfiles/xdg_config_home/
 cp -rf $XDG_CONFIG_HOME/nvim ~/Documentos/dotfiles/xdg_config_home/
 cp -rf $XDG_CONFIG_HOME/cmus ~/Documentos/dotfiles/xdg_config_home/
-cp -rf $XDG_DATA_HOME/pass ~/Documentos/dotfiles/xdg_data_home/
 cp $HOME/.zshenv ~/Documentos/dotfiles/
 cp -rf $XDG_CONFIG_HOME/zathura ~/Documentos/dotfiles/xdg_config_home/
 cp -rf $XDG_CONFIG_HOME/zsh ~/Documentos/dotfiles/xdg_config_home/

@@ -4,6 +4,7 @@ return {
     config = function()
         local icons = require('utils').icons
         local lualine = require('lualine')
+        local one_colors = require('onedark.palette').dark
 
         -- NOTE: Colores para ayu
         -- local colors = {
@@ -23,17 +24,18 @@ return {
 
         -- NOTE: Colores para onedark
         local colors = {
-            bg       = '#21252b',
-            fg       = '#abb2bf',
-            yellow   = '#e5c07b',
-            cyan     = '#56b6c2',
-            darkblue = '#73b8f1',
-            green    = '#98c379',
-            orange   = '#d19a66',
-            violet   = '#8a3fa0',
-            magenta  = '#c678dd',
-            blue     = '#61afef',
-            red      = '#e86671',
+            bg       = one_colors.bg_d,
+            fg       = one_colors.fg,
+            fg_d     = one_colors.grey,
+            yellow   = one_colors.yellow,
+            cyan     = one_colors.cyan,
+            darkblue = one_colors.bg_blue,
+            green    = one_colors.green,
+            orange   = one_colors.orange,
+            violet   = one_colors.dark_purple,
+            magenta  = one_colors.purple,
+            blue     = one_colors.blue,
+            red      = one_colors.red,
         }
 
         local conditions = {
@@ -182,7 +184,7 @@ return {
             end,
         }
 
-        ins_left { 'progress', color = { fg = colors.fg, gui = 'bold' } }
+        ins_left { 'progress', color = { fg = colors.fg_d, gui = 'bold' } }
 
         ins_left {
             'diagnostics',
@@ -223,14 +225,14 @@ return {
             'o:encoding',
             fmt = string.upper,
             cond = conditions.hide_in_width,
-            color = { fg = colors.fg, gui = 'bold' },
+            color = { fg = colors.fg_d, gui = 'bold' },
         }
 
         ins_right {
             'fileformat',
             fmt = string.upper,
             icons_enabled = false,
-            color = { fg = colors.fg, gui = 'bold' },
+            color = { fg = colors.fg_d, gui = 'bold' },
         }
 
         ins_right {
