@@ -229,7 +229,7 @@ return {
         }
 
         ins_right {
-            'fileformat',
+            'filetype',
             fmt = string.upper,
             icons_enabled = false,
             color = { fg = colors.fg_d, gui = 'bold' },
