@@ -2,6 +2,7 @@ return {
     'navarasu/onedark.nvim',
     config = function()
         local onedark = require('onedark')
+        local colors = require('onedark.palette').dark
 
         onedark.setup({
             style = 'dark', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
@@ -28,19 +29,19 @@ return {
             },
             colors = {}, -- Override default colors
             highlights = {
-                CursorLineNr = { fg = '$yellow' },
-                TelescopePromptBorder = { fg = '$yellow' },
-                TelescopePromptTitle = { fg = '$yellow', },
-                TelescopePreviewTitle = { fg = '$fg', },
-                TelescopePreviewBorder = { fg = '$fg', },
-                TelescopeResultsTitle = { fg = '$fg', },
-                TelescopeResultsBorder = { fg = '$fg', },
+                CursorLineNr = { fg = colors.yellow },
+                TelescopePromptBorder = { fg = colors.yellow },
+                TelescopePromptTitle = { fg = colors.yellow, },
+                TelescopePreviewTitle = { fg = colors.fg, },
+                TelescopePreviewBorder = { fg = colors.grey, },
+                TelescopeResultsTitle = { fg = colors.fg, },
+                TelescopeResultsBorder = { fg = colors.grey, },
                 NormalFloat = { bg = 'NONE' },
-                FloatBorder = { fg = '$fg', bg = 'NONE' },
-                LspInfoBorder = { fg = '$fg' },
+                FloatBorder = { fg = colors.grey, bg = 'NONE' },
+                LspInfoBorder = { fg = colors.grey },
                 NvimTreeNormal = { bg = '#21252b' },
-                ['@tag'] = { fg = '$red' },
-                ['@tag.delimiter'] = { fg = '$light_grey' },
+                ['@tag'] = { fg = colors.red },
+                ['@tag.delimiter'] = { fg = colors.grey },
             }, -- Override highlight groups
             diagnostics = {
                 darker = false, -- darker colors for diagnostic
