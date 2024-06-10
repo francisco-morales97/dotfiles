@@ -1,8 +1,10 @@
 local g = vim.g
 local opt = vim.opt
 
-g.mapleader = ','
+g.mapleader = ' '
+g.maplocalleader = ' '
 g.user_emmet_leader_key = '<C-z>'
+g.have_nerd_font = true
 
 opt.compatible = false
 opt.showmode = true
@@ -20,6 +22,7 @@ opt.laststatus = 3
 opt.number = true
 opt.relativenumber = true
 opt.scrolloff = 8
+opt.breakindent = true
 
 opt.tabstop = 4
 opt.shiftwidth = 4
@@ -30,7 +33,6 @@ opt.splitright = true
 
 opt.wrap = true
 opt.linebreak = true
-opt.list = false
 
 opt.hlsearch = false
 opt.incsearch = true
@@ -56,3 +58,16 @@ opt.spelllang = {
     'en_us'
 }
 
+vim.cmd([[
+    hi ColorColumn guibg='NvimDarkGray3'
+    hi ModeMsg guifg='NvimLightYellow'
+    hi NormalFloat guibg='NONE'
+    hi FloatBorder guifg='NvimDarkGray4'
+    hi LspInfoBorder guifg='NvimDarkGray4'
+    hi WinSeparator guifg='NvimDarkGray4'
+    hi @tag.delimiter guifg='NvimLightGray4'
+    hi TelescopeBorder guifg='NvimDarkGray4'
+    hi TelescopePromptTitle guifg='NvimLightYellow'
+    hi TelescopePromptBorder guifg='NvimLightYellow'
+    hi MiniIndentscopeSymbol guifg='NvimDarkGray4'
+]])

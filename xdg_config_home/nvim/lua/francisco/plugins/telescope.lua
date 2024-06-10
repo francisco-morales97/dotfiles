@@ -68,6 +68,7 @@ return {
         -- Keymaps
         map('n', '<leader>ff', builtin.find_files, 'Busca archivos en proyecto')
         map('n', '<leader>ft', builtin.live_grep, 'Busca archivos por palabras')
+        map('n', '<leader>fw', function() builtin.grep_string(opts) end, 'Busca palabra en el proyecto')
         map('n', '<leader>fb', function() builtin.buffers(opts) end, 'Muestra buffers abiertos')
         map('n', '<leader>fo', builtin.oldfiles, 'Muestra archivos recientes')
         map('n', '<leader>fg', builtin.git_files, 'Busca archivos git en proyecto')

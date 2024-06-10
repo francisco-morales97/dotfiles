@@ -6,36 +6,36 @@ return {
         local lualine = require('lualine')
         local one_colors = require('onedark.palette').dark
 
-        -- NOTE: Colores para ayu
+        -- NOTE: Colores para onedark
         -- local colors = {
-        --     bg       = '#272d38',
-        --     bg_off   = '#191E2A',
-        --     fg       = '#CBCCC6',
-        --     yellow   = '#FFD580',
-        --     cyan     = '#5CCFE6',
-        --     darkblue = '#232A4C',
-        --     green    = '#BAE67E',
-        --     orange   = '#FFA759',
-        --     violet   = '#D4BFFF',
-        --     magenta  = '#D4BFFF',
-        --     blue     = '#73D0FF',
-        --     red      = '#F27983',
+        --     bg       = one_colors.bg_d,
+        --     fg       = one_colors.fg,
+        --     fg_d     = one_colors.grey,
+        --     yellow   = one_colors.yellow,
+        --     cyan     = one_colors.cyan,
+        --     darkblue = one_colors.bg_blue,
+        --     green    = one_colors.green,
+        --     orange   = one_colors.orange,
+        --     violet   = one_colors.dark_purple,
+        --     magenta  = one_colors.purple,
+        --     blue     = one_colors.blue,
+        --     red      = one_colors.red,
         -- }
 
-        -- NOTE: Colores para onedark
+        -- NOTE: Colores para default
         local colors = {
-            bg       = one_colors.bg_d,
-            fg       = one_colors.fg,
-            fg_d     = one_colors.grey,
-            yellow   = one_colors.yellow,
-            cyan     = one_colors.cyan,
-            darkblue = one_colors.bg_blue,
-            green    = one_colors.green,
-            orange   = one_colors.orange,
-            violet   = one_colors.dark_purple,
-            magenta  = one_colors.purple,
-            blue     = one_colors.blue,
-            red      = one_colors.red,
+            bg = 'NvimDarkGray3',
+            fg = 'white',
+            fg_d = 'NvimLightGray4',
+            yellow = 'NvimLightYellow',
+            cyan = 'NvimDarkCyan',
+            darkblue = 'NvimDarkBlue',
+            green = 'NvimLightGreen',
+            orange = 'NvimDarkYellow',
+            violet = 'NvimDarkMagenta',
+            magenta = 'NvimLightMagenta',
+            blue = 'NvimLightBlue',
+            red = 'NvimLightRed'
         }
 
         local conditions = {
@@ -189,8 +189,12 @@ return {
         ins_left {
             'diagnostics',
             sources = { 'nvim_diagnostic' },
-            symbols = { error = icons.error .. ' ', warn = icons.warn .. ' ', info = icons.info .. ' ',
-                hint = icons.hint .. ' ' },
+            symbols = {
+                error = icons.error .. ' ',
+                warn = icons.warn .. ' ',
+                info = icons.info .. ' ',
+                hint = icons.hint .. ' '
+            },
             diagnostics_color = {
                 color_error = { fg = colors.red },
                 color_warn = { fg = colors.yellow },
@@ -215,17 +219,10 @@ return {
             symbols = { added = icons.add .. ' ', modified = icons.change .. ' ', removed = icons.delete .. ' ' },
             diff_color = {
                 added = { fg = colors.green },
-                modified = { fg = colors.orange },
+                modified = { fg = colors.yellow },
                 removed = { fg = colors.red },
             },
             cond = conditions.hide_in_width,
-        }
-
-        ins_right {
-            'o:encoding',
-            fmt = string.upper,
-            cond = conditions.hide_in_width,
-            color = { fg = colors.fg_d, gui = 'bold' },
         }
 
         ins_right {

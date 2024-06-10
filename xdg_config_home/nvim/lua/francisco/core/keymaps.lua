@@ -1,7 +1,6 @@
 local map = require('utils').map
 
 map('i', '<C-H>', '<C-W>', 'Borrar palabras completas en insert')
-map('n', '<space>', ':', 'Mapea <space> para insertar comando')
 map('n', 'sh', '<C-w>H', 'Mueve split hacia la izquierda')
 map('n', 'sj', '<C-w>J', 'Mueve split hacia abajo')
 map('n', 'sk', '<C-w>K', 'Mueve split hacia arriba')

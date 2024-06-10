@@ -1,53 +1,48 @@
 return {
     'ThePrimeagen/harpoon',
+    branch = 'harpoon2',
     dependencies = 'nvim-lua/plenary.nvim',
     config = function()
         local map = require('utils').map
+        local border = require('utils').border
         local harpoon = require('harpoon')
-        local hm = require('harpoon.mark');
-        local hu = require('harpoon.ui');
-
-        harpoon.setup {
-            save_on_toggle = false,
-            save_on_change = true,
-            enter_on_sendcmd = false,
-            excluded_filetypes = { "harpoon" },
-
-            -- set marks specific to each git branch inside git repository
-            mark_branch = false,
-
-            -- enable tabline with harpoon marks
-            tabline = false,
-            tabline_prefix = "   ",
-            tabline_suffix = "   ",
-
-            menu = {
-                width = 80,
-            }
+        local opts = {
+            border = border,
+            title_pos = 'center',
+            ui_width_ratio = 0.5
         }
 
+        harpoon:setup({
+            settings = {
+                save_on_toggle = true,
+                sync_on_ui_close = true
+            }
+        })
+
         map('n', '<leader>m', function()
-            hm.add_file();
+            harpoon:list():add()
             local current_file = vim.fn.expand('%:t')
             print('Archivo marcado:', current_file)
         end, 'Agrega archivo a harpoon')
 
-        map('n', '<leader>fm', hu.toggle_quick_menu, 'Muestra lista de harpoon')
+        map('n', '<leader>fm', function()
+            harpoon.ui:toggle_quick_menu(harpoon:list(), opts)
+        end, 'Muestra lista de harpoon')
 
         map('n', '<C-h>', function()
-            hu.nav_file(1)
+            harpoon:list():select(1)
         end, 'Navega a archivo 1 de harpoon')
 
         map('n', '<C-j>', function()
-            hu.nav_file(2)
+            harpoon:list():select(2)
         end, 'Navega a archivo 2 de harpoon')
 
         map('n', '<C-k>', function()
-            hu.nav_file(3)
+            harpoon:list():select(3)
         end, 'Navega a archivo 3 de harpoon')
 
         map('n', '<C-l>', function()
-            hu.nav_file(4)
+            harpoon:list():select(4)
         end, 'Navega a archivo 4 de harpoon')
     end
 }

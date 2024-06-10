@@ -184,6 +184,12 @@ return {
 
             require('lspconfig.ui.windows').default_options.border = ui_border
 
+            vim.diagnostic.config({
+                virtual_text = {
+                    prefix = '●'
+                }
+            })
+
             local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
 
             function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
@@ -235,7 +241,7 @@ return {
                     angularls = function()
                         require('lspconfig').angularls.setup({
                             root_dir = require('lspconfig.util').root_pattern("angular.json", "project.json"),
-                            filetypes = { "angular", "html", "typescript", "typescriptreact", "typescript.tsx" },
+                            filetypes = { "angular.html", "html", "typescript", "typescriptreact", "typescript.tsx" },
                         })
                     end
                 }

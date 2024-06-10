@@ -8,7 +8,7 @@ return {
             style = 'dark', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
             transparent = true,
             term_colors = true,
-            ending_tildes = false,
+            ending_tildes = true,
             cmp_itemkind_reverse = false,
             toggle_style_key = nil,
             toggle_style_list = {
@@ -23,7 +23,7 @@ return {
             code_style = {
                 comments = 'italic',
                 keywords = 'italic',
-                functions = 'none',
+                functions = 'bold',
                 strings = 'none',
                 variables = 'none'
             },
@@ -38,8 +38,8 @@ return {
                 TelescopeResultsBorder = { fg = colors.grey, },
                 NormalFloat = { bg = 'NONE' },
                 FloatBorder = { fg = colors.grey, bg = 'NONE' },
+                FloatTitle = { fg = colors.fg },
                 LspInfoBorder = { fg = colors.grey },
-                NvimTreeNormal = { bg = '#21252b' },
                 ['@tag'] = { fg = colors.red },
                 ['@tag.delimiter'] = { fg = colors.grey },
             }, -- Override highlight groups
@@ -50,6 +50,6 @@ return {
             },
         })
 
-        onedark.load()
+        -- onedark.load()
     end
 }
