@@ -70,7 +70,6 @@ alias notas="cd $HOME/Documentos/Notas"
 alias mangas="cd $HOME/Documentos/Mangas"
 alias compras="nvim $HOME/Documentos/Notas/compras.md"
 alias media="nvim $HOME/Documentos/Notas/media.md"
-alias cat="bat"
 
 # Zsh history
 HISTSIZE=1000
@@ -89,7 +88,8 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Zsh syntax highlight
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# keybinds de fzf
+# FZF
+export FZF_DEFAULT_OPTS="--height 50% --tmux 75%,50% --layout reverse --border --preview 'bat --color=always --style=numbers {}'"
 source <(fzf --zsh)
 
 unset NPM_CONFIG_PREFIX

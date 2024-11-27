@@ -15,14 +15,14 @@ return {
         harpoon:setup({
             settings = {
                 save_on_toggle = true,
-                sync_on_ui_close = true
+                sync_on_ui_close = true,
             }
         })
 
         map('n', '<leader>m', function()
             harpoon:list():add()
             local current_file = vim.fn.expand('%:t')
-            print('Archivo marcado:', current_file)
+            vim.notify('Archivo marcado: ' .. current_file)
         end, 'Agrega archivo a harpoon')
 
         map('n', '<leader>fm', function()

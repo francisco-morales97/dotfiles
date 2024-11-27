@@ -44,7 +44,7 @@ return {
                     end,
                     mode = 'n',
                 },
-                ["<C-x>"] = {
+                ["<C-s>"] = {
                     callback = function()
                         oil.select({
                             horizontal = true,

@@ -5,6 +5,7 @@ return {
         local icons = require('utils').icons
         local lualine = require('lualine')
         local one_colors = require('onedark.palette').dark
+        local rosepine_colors = require('rose-pine.palette')
 
         -- NOTE: Colores para onedark
         -- local colors = {
@@ -23,19 +24,35 @@ return {
         -- }
 
         -- NOTE: Colores para default
+        -- local colors = {
+        --     bg = 'NvimDarkGray3',
+        --     fg = 'white',
+        --     fg_d = 'NvimLightGray4',
+        --     yellow = 'NvimLightYellow',
+        --     cyan = 'NvimDarkCyan',
+        --     darkblue = 'NvimDarkBlue',
+        --     green = 'NvimLightGreen',
+        --     orange = 'NvimDarkYellow',
+        --     violet = 'NvimDarkMagenta',
+        --     magenta = 'NvimLightMagenta',
+        --     blue = 'NvimLightBlue',
+        --     red = 'NvimLightRed'
+        -- }
+
+        -- NOTE: Colores para rose-pine
         local colors = {
-            bg = 'NvimDarkGray3',
-            fg = 'white',
-            fg_d = 'NvimLightGray4',
-            yellow = 'NvimLightYellow',
-            cyan = 'NvimDarkCyan',
-            darkblue = 'NvimDarkBlue',
-            green = 'NvimLightGreen',
-            orange = 'NvimDarkYellow',
-            violet = 'NvimDarkMagenta',
-            magenta = 'NvimLightMagenta',
-            blue = 'NvimLightBlue',
-            red = 'NvimLightRed'
+            bg = rosepine_colors.base,
+            fg = rosepine_colors.text,
+            fg_d = rosepine_colors.muted,
+            yellow = rosepine_colors.gold,
+            cyan = rosepine_colors.rose,
+            darkblue = rosepine_colors.pine,
+            green = rosepine_colors.pine,
+            orange = rosepine_colors.gold,
+            violet = rosepine_colors.rose,
+            magenta = rosepine_colors.iris,
+            blue = rosepine_colors.pine,
+            red = rosepine_colors.love
         }
 
         local conditions = {
@@ -53,7 +70,7 @@ return {
         }
 
         -- Config
-        local config = {
+        local evil_line = {
             options = {
                 component_separators = '',
                 section_separators = '',
@@ -82,11 +99,11 @@ return {
         }
 
         local function ins_left(component)
-            table.insert(config.sections.lualine_c, component)
+            table.insert(evil_line.sections.lualine_c, component)
         end
 
         local function ins_right(component)
-            table.insert(config.sections.lualine_x, component)
+            table.insert(evil_line.sections.lualine_x, component)
         end
 
         ins_left {
@@ -124,7 +141,7 @@ return {
 
         ins_left {
             function()
-                return ''
+                return ''
             end,
             color = function()
                 local mode_color = {
@@ -235,8 +252,8 @@ return {
         ins_right {
             function()
                 local msg = 'No Active Lsp'
-                local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
-                local clients = vim.lsp.get_active_clients()
+                local buf_ft = vim.api.nvim_get_option_value('filetype', { buf = 0 })
+                local clients = vim.lsp.get_clients()
                 if next(clients) == nil then
                     return msg
                 end
@@ -309,6 +326,6 @@ return {
             padding = { left = 1 },
         }
 
-        lualine.setup(config)
+        lualine.setup(evil_line)
     end
 }

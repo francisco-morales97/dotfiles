@@ -4,8 +4,6 @@ return {
     config = function()
         local map = require('utils').map
 
-        require('mini.comment').setup {}
-
         require('mini.indentscope').setup {
             draw = {
                 delay = 50,
@@ -23,36 +21,6 @@ return {
             symbol = '╎'
         }
 
-        require('mini.pairs').setup {
-            modes = { insert = true, command = false, terminal = false },
-
-            -- Global mappings. Each right hand side should be a pair information, a
-            -- table with at least these fields (see more in |MiniPairs.map|):
-            -- - <action> - one of 'open', 'close', 'closeopen'.
-            -- - <pair> - two character string for pair to be used.
-            -- By default pair is not inserted after `\`, quotes are not recognized by
-            -- `<CR>`, `'` does not insert pair after a letter.
-            -- Only parts of tables can be tweaked (others will use these defaults).
-            mappings = {
-                ['('] = { action = 'open', pair = '()', neigh_pattern = '[^\\].' },
-                ['['] = { action = 'open', pair = '[]', neigh_pattern = '[^\\].' },
-                ['{'] = { action = 'open', pair = '{}', neigh_pattern = '[^\\].' },
-                ['<'] = { action = 'open', pair = '<>', neigh_pattern = '[^\\].' },
-                ['`'] = { action = 'open', pair = '``', neigh_pattern = '[^\\].' },
-
-                [')'] = { action = 'close', pair = '()', neigh_pattern = '[^\\].' },
-                [']'] = { action = 'close', pair = '[]', neigh_pattern = '[^\\].' },
-                ['}'] = { action = 'close', pair = '{}', neigh_pattern = '[^\\].' },
-                ['>'] = { action = 'close', pair = '<>', neigh_pattern = '[^\\].' },
-                ['`'] = { action = 'close', pair = '``', neigh_pattern = '[^\\].' },
-
-                ['"'] = { action = 'closeopen', pair = '""', neigh_pattern = '[^\\].', register = { cr = false } },
-                ["'"] = { action = 'closeopen', pair = "''", neigh_pattern = '[^%a\\].', register = { cr = false } },
-                -- ['`'] = { action = 'closeopen', pair = '``', neigh_pattern = '[^\\].', register = { cr = false } },
-                ['<'] = { action = 'closeopen', pair = '<>', neigh_pattern = '[^\\].' },
-            },
-        }
-
         require('mini.surround').setup {
             highlight_duration = 500,
             mappings = {
@@ -66,7 +34,6 @@ return {
         }
 
         require('mini.bufremove').setup { set_vim_settings = true }
-        require('mini.move').setup {}
 
         local gen_hook = require('mini.splitjoin').gen_hook
         local curly = { brackets = { '%b{}' } }
@@ -78,8 +45,6 @@ return {
                 hooks_post = { pad_curly }
             }
         }
-
-        -- require('mini.tabline').setup{}
 
         map('n', '<leader>bd', MiniBufremove.delete, 'Borra buffer actual')
         map('n', '<leader>bu', MiniBufremove.unshow, 'Oculta buffer actual')

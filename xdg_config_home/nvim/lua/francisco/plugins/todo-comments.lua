@@ -59,6 +59,6 @@ return {
             },
         }
 
-        map('n', '<leader>fn', '<cmd>TodoTelescope<CR>', 'Muestra lista de notas')
+        map('n', '<leader>fn', '<cmd>TodoFzfLua<CR>', 'Muestra lista de notas')
     end
 }

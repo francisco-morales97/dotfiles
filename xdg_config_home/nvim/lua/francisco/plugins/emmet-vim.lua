@@ -3,6 +3,7 @@ return {
     ft = {
         'angular',
         'html',
+        'htmlangular',
         'css',
         'scss',
         'javascript',
