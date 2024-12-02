@@ -9,11 +9,11 @@ return {
             styles = {
                 transparency = true
             },
-            highligh_groups = {
+            highlight_groups = {
                 NormalFloat = { bg = 'NONE' },
                 ModeMsg = { fg = 'gold' },
                 CursorLineNr = { fg = 'gold' },
-                FzfLuaCursorLine = { fg = 'overlay' },
+                PmenuSel = { bg = 'highlight_med' },
                 CmpItemKindVariable = { fg = 'pine' },
                 CmpItemKindInterface = { fg = 'gold' },
                 CmpItemKindClass = { fg = 'gold' },

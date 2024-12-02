@@ -51,13 +51,13 @@ return {
             TypeParameter = '',
         }
 
-        map({ 'i', 's' }, '<A-k>', function()
+        map({ 'i', 's' }, '<S-Tab>', function()
             if luasnip.jumpable(-1) then
                 luasnip.jump(-1)
             end
         end, 'Retrocede al anterior placeholder del snippet')
 
-        map({ 'i', 's' }, '<A-j>', function()
+        map({ 'i', 's' }, '<Tab>', function()
             if luasnip.expand_or_jumpable() then
                 luasnip.expand_or_jump()
             end

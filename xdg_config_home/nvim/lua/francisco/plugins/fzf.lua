@@ -3,6 +3,7 @@ return {
     config = function()
         local map = require('utils').map
         local fzf = require("fzf-lua")
+        local actions = require('fzf-lua.actions')
 
         fzf.setup({
             defaults = {
@@ -25,6 +26,11 @@ return {
             grep = {
                 no_header = true,
                 no_header_i = true
+            },
+            keymap = {
+                fzf = {
+                    ["ctrl-q"] = 'select-all+accept'
+                }
             }
         })
 
