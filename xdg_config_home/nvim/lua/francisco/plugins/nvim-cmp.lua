@@ -73,8 +73,8 @@ return {
 
         luasnip.add_snippets('htmlangular', {
             snippet('for', {
-                text_node('@for ('), insert_node(1), text_node(') {'),
-                text_node({ '', '\t' }), insert_node(2),
+                text_node('@for ('), insert_node(1, 'item'), text_node(' of '), insert_node(2, 'array'), text_node('; track '), insert_node(3, 'id'), text_node(') {'),
+                text_node({ '', '\t' }), insert_node(4),
                 text_node({ '', '} @empty {' }),
                 text_node({ '', '\t' }), insert_node(0),
                 text_node({ '', '}' }),
@@ -85,6 +85,8 @@ return {
             snippet('if', {
                 text_node('@if ('), insert_node(1), text_node(') {'),
                 text_node({ '', '\t' }), insert_node(2),
+                text_node({ '', '} @else {' }),
+                text_node({ '', '\t' }), insert_node(0),
                 text_node({ '', '}' }),
             })
         })

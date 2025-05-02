@@ -4,6 +4,8 @@ return {
     config = function()
         local map = require('utils').map
 
+        require('mini.pairs').setup {}
+
         require('mini.indentscope').setup {
             draw = {
                 delay = 50,

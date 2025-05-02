@@ -60,16 +60,11 @@ alias matrix="cmatrix -ab"
 alias ls="lsd"
 alias grep="grep --color=always"
 alias mpv="mpv --profile=480p"
-alias etags="EDITOR=$EDITOR opustags --in-place --edit"
-alias anime="ani-cli"
-alias dorama="dra-cla -q best"
 alias mirror-refresh="sudo reflector --verbose --score 100 -l 50 -f 10 --sort rate --save /etc/pacman.d/mirrorlist"
 alias monitor="gotop -l layout"
 alias books="cd $HOME/Documentos/E-Books"
 alias notas="cd $HOME/Documentos/Notas"
 alias mangas="cd $HOME/Documentos/Mangas"
-alias compras="nvim $HOME/Documentos/Notas/compras.md"
-alias media="nvim $HOME/Documentos/Notas/media.md"
 
 # Zsh history
 HISTSIZE=1000
