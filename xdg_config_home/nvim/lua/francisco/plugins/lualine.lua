@@ -4,7 +4,6 @@ return {
     config = function()
         local icons = require('utils').icons
         local lualine = require('lualine')
-        local one_colors = require('onedark.palette').dark
         local rosepine_colors = require('rose-pine.palette')
 
         -- NOTE: Colores para default
