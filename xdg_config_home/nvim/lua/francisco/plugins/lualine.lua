@@ -7,53 +7,37 @@ return {
         local one_colors = require('onedark.palette').dark
         local rosepine_colors = require('rose-pine.palette')
 
-        -- NOTE: Colores para onedark
-        -- local colors = {
-        --     bg       = one_colors.bg_d,
-        --     fg       = one_colors.fg,
-        --     fg_d     = one_colors.grey,
-        --     yellow   = one_colors.yellow,
-        --     cyan     = one_colors.cyan,
-        --     darkblue = one_colors.bg_blue,
-        --     green    = one_colors.green,
-        --     orange   = one_colors.orange,
-        --     violet   = one_colors.dark_purple,
-        --     magenta  = one_colors.purple,
-        --     blue     = one_colors.blue,
-        --     red      = one_colors.red,
-        -- }
-
         -- NOTE: Colores para default
-        -- local colors = {
-        --     bg = 'NvimDarkGray3',
-        --     fg = 'white',
-        --     fg_d = 'NvimLightGray4',
-        --     yellow = 'NvimLightYellow',
-        --     cyan = 'NvimDarkCyan',
-        --     darkblue = 'NvimDarkBlue',
-        --     green = 'NvimLightGreen',
-        --     orange = 'NvimDarkYellow',
-        --     violet = 'NvimDarkMagenta',
-        --     magenta = 'NvimLightMagenta',
-        --     blue = 'NvimLightBlue',
-        --     red = 'NvimLightRed'
-        -- }
+        local colors = {
+            bg = 'None',
+            fg = 'NvimLightGray1',
+            fg_d = 'NvimDarkGray4',
+            yellow = 'NvimLightYellow',
+            cyan = 'NvimDarkCyan',
+            darkblue = 'NvimDarkBlue',
+            green = 'NvimLightGreen',
+            orange = 'NvimDarkYellow',
+            violet = 'NvimDarkMagenta',
+            magenta = 'NvimLightMagenta',
+            blue = 'NvimLightBlue',
+            red = 'NvimLightRed'
+        }
 
         -- NOTE: Colores para rose-pine
-        local colors = {
-            bg = rosepine_colors.base,
-            fg = rosepine_colors.text,
-            fg_d = rosepine_colors.muted,
-            yellow = rosepine_colors.gold,
-            cyan = rosepine_colors.rose,
-            darkblue = rosepine_colors.pine,
-            green = rosepine_colors.pine,
-            orange = rosepine_colors.gold,
-            violet = rosepine_colors.rose,
-            magenta = rosepine_colors.iris,
-            blue = rosepine_colors.pine,
-            red = rosepine_colors.love
-        }
+        -- local colors = {
+        --     bg = 'NONE',
+        --     fg = rosepine_colors.text,
+        --     fg_d = rosepine_colors.muted,
+        --     yellow = rosepine_colors.gold,
+        --     cyan = rosepine_colors.rose,
+        --     darkblue = rosepine_colors.pine,
+        --     green = rosepine_colors.pine,
+        --     orange = rosepine_colors.gold,
+        --     violet = rosepine_colors.rose,
+        --     magenta = rosepine_colors.iris,
+        --     blue = rosepine_colors.pine,
+        --     red = rosepine_colors.love
+        -- }
 
         local conditions = {
             buffer_not_empty = function()
@@ -107,101 +91,12 @@ return {
         end
 
         ins_left {
-            function()
-                return '▊'
-            end,
-            -- color = { fg = colors.blue },
-            color = function()
-                local mode_color = {
-                    n = colors.green,
-                    i = colors.blue,
-                    v = colors.red,
-                    [''] = colors.blue,
-                    V = colors.blue,
-                    c = colors.magenta,
-                    no = colors.red,
-                    s = colors.orange,
-                    S = colors.orange,
-                    [''] = colors.orange,
-                    ic = colors.yellow,
-                    R = colors.violet,
-                    Rv = colors.violet,
-                    cv = colors.red,
-                    ce = colors.red,
-                    r = colors.cyan,
-                    rm = colors.cyan,
-                    ['r?'] = colors.cyan,
-                    ['!'] = colors.red,
-                    t = colors.red,
-                }
-                return { fg = mode_color[vim.fn.mode()] }
-            end,
-            padding = { left = 0, right = 1 },
-        }
-
-        ins_left {
-            function()
-                return ''
-            end,
-            color = function()
-                local mode_color = {
-                    n = colors.green,
-                    i = colors.blue,
-                    v = colors.red,
-                    [''] = colors.blue,
-                    V = colors.blue,
-                    c = colors.magenta,
-                    no = colors.red,
-                    s = colors.orange,
-                    S = colors.orange,
-                    [''] = colors.orange,
-                    ic = colors.yellow,
-                    R = colors.violet,
-                    Rv = colors.violet,
-                    cv = colors.red,
-                    ce = colors.red,
-                    r = colors.cyan,
-                    rm = colors.cyan,
-                    ['r?'] = colors.cyan,
-                    ['!'] = colors.red,
-                    t = colors.red,
-                }
-                return { fg = mode_color[vim.fn.mode()] }
-            end,
-            padding = { right = 1 },
-        }
-
-        ins_left {
             'branch',
             icon = '',
-            color = function()
-                local mode_color = {
-                    n = colors.green,
-                    i = colors.blue,
-                    v = colors.red,
-                    [''] = colors.blue,
-                    V = colors.blue,
-                    c = colors.magenta,
-                    no = colors.red,
-                    s = colors.orange,
-                    S = colors.orange,
-                    [''] = colors.orange,
-                    ic = colors.yellow,
-                    R = colors.violet,
-                    Rv = colors.violet,
-                    cv = colors.red,
-                    ce = colors.red,
-                    r = colors.cyan,
-                    rm = colors.cyan,
-                    ['r?'] = colors.cyan,
-                    ['!'] = colors.red,
-                    t = colors.red,
-                }
-                return { fg = mode_color[vim.fn.mode()], gui = 'bold' }
-            end,
+            color = { fg = colors.fg_d }
         }
 
-        ins_left { 'progress', color = { fg = colors.fg_d, gui = 'bold' } }
+        ins_left { 'progress', color = { fg = colors.fg_d } }
 
         ins_left {
             'diagnostics',
@@ -228,7 +123,7 @@ return {
         ins_left {
             'filename',
             cond = conditions.buffer_not_empty,
-            color = { fg = colors.fg, gui = 'bold' }
+            color = { fg = colors.fg }
         }
 
         ins_right {
@@ -246,7 +141,7 @@ return {
             'filetype',
             fmt = string.upper,
             icons_enabled = false,
-            color = { fg = colors.fg_d, gui = 'bold' },
+            color = { fg = colors.fg_d },
         }
 
         ins_right {
@@ -266,64 +161,7 @@ return {
                 return msg
             end,
             icon = ' LSP:',
-            color = function()
-                local mode_color = {
-                    n = colors.green,
-                    i = colors.blue,
-                    v = colors.red,
-                    [''] = colors.blue,
-                    V = colors.blue,
-                    c = colors.magenta,
-                    no = colors.red,
-                    s = colors.orange,
-                    S = colors.orange,
-                    [''] = colors.orange,
-                    ic = colors.yellow,
-                    R = colors.violet,
-                    Rv = colors.violet,
-                    cv = colors.red,
-                    ce = colors.red,
-                    r = colors.cyan,
-                    rm = colors.cyan,
-                    ['r?'] = colors.cyan,
-                    ['!'] = colors.red,
-                    t = colors.red,
-                }
-                return { fg = mode_color[vim.fn.mode()], gui = 'bold' }
-            end,
-        }
-
-        ins_right {
-            function()
-                return '▊'
-            end,
-            -- color = { fg = colors.blue },
-            color = function()
-                local mode_color = {
-                    n = colors.green,
-                    i = colors.blue,
-                    v = colors.red,
-                    [''] = colors.blue,
-                    V = colors.blue,
-                    c = colors.magenta,
-                    no = colors.red,
-                    s = colors.orange,
-                    S = colors.orange,
-                    [''] = colors.orange,
-                    ic = colors.yellow,
-                    R = colors.violet,
-                    Rv = colors.violet,
-                    cv = colors.red,
-                    ce = colors.red,
-                    r = colors.cyan,
-                    rm = colors.cyan,
-                    ['r?'] = colors.cyan,
-                    ['!'] = colors.red,
-                    t = colors.red,
-                }
-                return { fg = mode_color[vim.fn.mode()] }
-            end,
-            padding = { left = 1 },
+            color = { fg = colors.fg_d }
         }
 
         lualine.setup(evil_line)
