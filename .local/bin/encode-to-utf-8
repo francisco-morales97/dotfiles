@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Definición de variables
+GREEN="\033[0;32m"
+RED="\033[0;31m"
+BOLD="\033[1m"
+NC="\033[0m"
+DIRECTORY="./"
+ENCODING_OUT="UTF-8"
+
+# Inicio del script
+[ ! -f "$1" ] && printf "${RED}${BOLD}Se necesita el nombre del archivo de subtitulos${NC}\n" && exit
+
+ENCODING_IN=$(file -i "$1" | sed -n 's/.*charset=\([^;]*\)/\1/p')
+
+if [ "$ENCODING_IN" = "iso-8859-1" ]; then
+    printf "Convirtiendo $1 (de $ENCODING_IN a $ENCODING_OUT)...\n"
+    iconv -f "$ENCODING_IN" -t "$ENCODING_OUT" "$1" > "$1.temp" && mv "$1.temp" "$1"
+
+    # Verificar si la conversión fue exitosa
+    if [ $? -eq 0 ]; then
+        printf "${GREEN}${BOLD}¡Conversión exitosa!${NC}\n"
+    else
+        printf "${RED}${BOLD}Error al convertir el archivo $NAME${NC}\n"
+    fi
+else
+    printf "El archivo ya esta codificado en UTF-8\n"
+fi

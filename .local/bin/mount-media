@@ -1,0 +1,12 @@
+#!/bin/bash
+
+MOVIES=/run/media/francisco/PLEX_MEDIA/Movies
+MOUNT_MOVIES=/mnt/Movies
+
+if [[ -n $(findmnt -M "$MOUNT_MOVIES") ]]; then
+    sudo umount "$MOUNT_MOVIES"
+    printf "$MOUNT_MOVIES desmontado\n"
+else
+    sudo mount --bind "$MOVIES" "$MOUNT_MOVIES"
+    printf "$MOUNT_MOVIES montado\n"
+fi

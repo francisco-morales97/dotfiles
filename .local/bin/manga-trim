@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -euo pipefail
+# Definición de variables
+GREEN="\033[0;32m"
+RED="\033[0;31m"
+BOLD="\033[1m"
+NC="\033[0m"
+
+[ ! -n "$1" ] && printf "${RED}${BOLD}Debes escribir el nombre del manga${NC}\n" && exit
+
+DIR=$HOME/Documentos/Mangas/"$1"
+MANGAS=$(find $DIR -name "*cbz" | sort)
+
+for MANGA in $MANGAS; do
+    MANGANAME=$(printf "$MANGA" | awk -F / '{print match($8, /[^ ]/) ? $8 : $7}')
+
+    if grep -q "TRIM" <<< "$MANGANAME"; then
+        continue
+    fi
+
+    printf "${BOLD}Editando '$MANGANAME'${NC}\n"
+
+    unzip -q "$MANGA" -x \*.xml -d $DIR
+    PAGES=$(find $DIR -name "*jpg" -o -name "*jpeg")
+
+    for PAGE in $PAGES; do
+        mogrify -trim $PAGE
+    done
+
+    printf "$PAGES" | zip -j -q --update "$MANGA" -@
+    printf "$PAGES" | xargs rm
+    mv "$MANGA" "$HOME/Documentos/Mangas/$1/TRIM-$MANGANAME"
+done
+
+echo
+notify-send "¡Recorte finalizado!" "'<i>$1</i>' ha sido recortado con éxito"
+printf "${GREEN}${BOLD}¡Recorte finalizado!${NC}\n"
