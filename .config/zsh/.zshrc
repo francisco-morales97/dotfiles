@@ -56,14 +56,13 @@ fi
 
 # Sección de aliases
 alias matrix="cmatrix -ab"
-# alias ls="ls --color=always"
 alias ls="lsd"
 alias grep="grep --color=always"
 alias mpv="mpv --profile=480p"
 alias mirror-refresh="sudo reflector --verbose --score 100 -l 50 -f 10 --sort rate --save /etc/pacman.d/mirrorlist"
 alias books="cd $HOME/Documentos/E-Books"
 alias mangas="cd $HOME/Documentos/Mangas"
-alias df="cd $HOME/Documentos/dotfiles"
+alias dotfiles="cd $HOME/Documentos/dotfiles"
 
 # Zsh history
 HISTSIZE=1000

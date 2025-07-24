@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Definición de variables
+GREEN="\033[0;32m"
+BOLD="\033[1m"
+NC="\033[0m"
+MOVIES=/run/media/francisco/SERVER_MEDIA/Movies
+MOUNT_POINT=/mnt/Movies
+
+printf "Deteniendo servicio de Emby...\n"
+sudo systemctl stop emby-server.service
+printf "Desmontando $MOUNT_POINT...\n"
+sudo umount "$MOUNT_POINT"
+printf "${GREEN}${BOLD}¡Finalizado!${NC}\n"

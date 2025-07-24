@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Definición de variables
+GREEN="\033[0;32m"
+RED="\033[0;31m"
+BOLD="\033[1m"
+NC="\033[0m"
+MOVIES=/run/media/francisco/SERVER_MEDIA/Movies
+MOUNT_POINT=/mnt/Movies
+
+if [ ! -d "$MOVIES" ]; then
+printf "${RED}${BOLD}El disco externo no está montado${NC}\n"
+exit 1
+fi
+
+printf "Montando $MOUNT_POINT...\n"
+sudo mount --bind "$MOVIES" "$MOUNT_POINT"
+printf "Iniciando servicio de Emby\n"
+sudo systemctl start emby-server.service
+printf "${GREEN}${BOLD}¡Finalizado!${NC}\n"

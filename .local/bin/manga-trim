@@ -34,5 +34,5 @@ for MANGA in $MANGAS; do
 done
 
 echo
-notify-send "¡Recorte finalizado!" "'<i>$1</i>' ha sido recortado con éxito"
+notify-send --app-name="Manga trim" "¡Recorte finalizado!" "'<i>$1</i>' ha sido recortado con éxito"
 printf "${GREEN}${BOLD}¡Recorte finalizado!${NC}\n"

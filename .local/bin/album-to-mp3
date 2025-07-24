@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# Definición de variables
+GREEN="\033[0;32m"
+RED="\033[0;31m"
+BOLD="\033[1m"
+NC="\033[0m"
+
+# Inicio del script
+[ -z "$1" ] && printf "${RED}${BOLD}Debes colocar el nombre del directorio${NC}\n" && exit
+
+DIR="$1"
+TRACK=0
+
+echo
+printf "Nombre para crear directorio: "; read -r OUTPUT_DIR
+mkdir -p "$OUTPUT_DIR"
+
+for FILE in "$DIR"/*.flac; do
+    # TRACK="$(printf "%02d" "$(expr $TRACK + 1)")"
+    # NAME=$(basename "$FILE" .flac | sed "s/^.*-/$TRACK - /")
+    NAME=$(basename "$FILE" .flac)
+    OUTPUT_NAME="$OUTPUT_DIR/$NAME.mp3"
+
+    printf "Convirtiendo $NAME...\n"
+    ffmpeg -i "$FILE" -ab 320k -map_metadata 0 -id3v2_version 3 -loglevel quiet "$OUTPUT_NAME"
+done
+
+echo
+notify-send --app-name="Album to mp3" "¡Conversion exitosa!" "Las canciones han sido guardadas en '<i>$OUTPUT_DIR</i>'"
+printf "${GREEN}${BOLD}¡Conversion exitosa!${NC}\n"

@@ -14,6 +14,10 @@ local group_colors = {
     ['ColorColumn'] = {
         bg = 'NvimDarkGray3'
     },
+    ['SpellBad'] = {
+        bg = 'NvimLightRed',
+        fg = 'NvimDarkGray1'
+    },
     ['ModeMsg'] = {
         fg = 'NvimLightYellow'
     },
@@ -97,7 +101,7 @@ local group_colors = {
         fg = 'NvimLightGray3'
     },
     ['@tag.delimiter'] = {
-        fg = 'NvimDarkGray4'
+        fg = 'NvimLightGray4'
     },
     ['@tag.attribute'] = {
         fg = 'NvimLightGray2',
