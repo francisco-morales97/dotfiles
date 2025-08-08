@@ -59,26 +59,3 @@ opt.spelllang = {
     'es',
     'en_us'
 }
-
--- vim.cmd([[
---     hi ColorColumn guibg='NvimDarkGray3'
---     hi ModeMsg guifg='NvimLightYellow'
---     hi NormalFloat guibg='NONE'
---     hi FloatBorder guifg='NvimDarkGray4'
---     hi LspInfoBorder guifg='NvimDarkGray4'
---     hi WinSeparator guifg='NvimDarkGray4'
---     hi @tag.delimiter guifg='NvimLightGray4'
---     hi TelescopeBorder guifg='NvimDarkGray4'
---     hi TelescopePromptTitle guifg='NvimLightYellow'
---     hi TelescopePromptBorder guifg='NvimLightYellow'
---     hi MiniIndentscopeSymbol guifg='NvimDarkGray4'
---     hi CmpItemKindVariable guifg='NvimLightBlue'
---     hi CmpItemKindInterface guifg='NvimLightYellow'
---     hi CmpItemKindClass guifg='NvimLightYellow'
---     hi CmpItemKindProperty guifg='NvimLightCyan'
---     hi CmpItemKindFunction guifg='NvimLightMagenta'
---     hi CmpItemKindMethod guifg='NvimLightMagenta'
---     hi CmpItemKindText guifg='NvimLightGray2'
---     hi CmpItemKindConstant guifg='NvimLightRed'
---     hi PmenuSel guibg='NvimLightGreen' guifg='NvimDarkGray1'
--- ]])

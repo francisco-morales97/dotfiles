@@ -17,7 +17,7 @@ return {
                     scrollbar = 'float',
                     vertical = 'up:75%',
                     layout = 'flex',
-                    flip_columns = 200,
+                    flip_columns = 150,
                 }
             },
             fzf_opts = {

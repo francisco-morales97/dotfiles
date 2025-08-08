@@ -4,9 +4,7 @@ return {
     config = function()
         local icons = require('utils').icons
         local lualine = require('lualine')
-        local rosepine_colors = require('rose-pine.palette')
 
-        -- NOTE: Colores para default
         local colors = {
             bg = 'None',
             fg = 'NvimLightGray1',
@@ -21,22 +19,6 @@ return {
             blue = 'NvimLightBlue',
             red = 'NvimLightRed'
         }
-
-        -- NOTE: Colores para rose-pine
-        -- local colors = {
-        --     bg = 'NONE',
-        --     fg = rosepine_colors.text,
-        --     fg_d = rosepine_colors.muted,
-        --     yellow = rosepine_colors.gold,
-        --     cyan = rosepine_colors.rose,
-        --     darkblue = rosepine_colors.pine,
-        --     green = rosepine_colors.pine,
-        --     orange = rosepine_colors.gold,
-        --     violet = rosepine_colors.rose,
-        --     magenta = rosepine_colors.iris,
-        --     blue = rosepine_colors.pine,
-        --     red = rosepine_colors.love
-        -- }
 
         local conditions = {
             buffer_not_empty = function()

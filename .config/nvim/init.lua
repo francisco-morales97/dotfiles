@@ -1,2 +1,5 @@
-require('francisco.core')
-require('francisco.lazy')
+require('core.options')
+require('core.keymaps')
+require('core.autocmd')
+require('core.colorscheme')
+require('core.lazy')

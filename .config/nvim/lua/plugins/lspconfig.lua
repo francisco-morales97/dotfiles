@@ -7,7 +7,6 @@ return {
         'hrsh7th/cmp-nvim-lsp',
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
-        { 'folke/neodev.nvim', config = true },
     },
     config = function()
         local map = require('utils').map
@@ -16,13 +15,20 @@ return {
         local mason_lsp = require('mason-lspconfig')
         local cmp_nvim_lsp = require('cmp_nvim_lsp')
         local lspconfig = require('lspconfig')
-        -- local telescope_builtin = require('telescope.builtin')
 
         require('lspconfig.ui.windows').default_options.border = ui_border
 
         vim.diagnostic.config({
             virtual_text = {
                 prefix = '●'
+            },
+            signs = {
+                text = {
+                    [vim.diagnostic.severity.ERROR] = icons.error,
+                    [vim.diagnostic.severity.WARN] = icons.warn,
+                    [vim.diagnostic.severity.HINT] = icons.hint,
+                    [vim.diagnostic.severity.INFO] = icons.info,
+                }
             }
         })
 
@@ -50,30 +56,17 @@ return {
                 map('n', 'gd', vim.lsp.buf.definition, 'Ir a definicion', opts)
                 map('n', 'K', vim.lsp.buf.hover, 'Muestra info en hover', opts)
                 map('n', 'gl', vim.diagnostic.open_float, 'Abre diagnostico en ventana flotante', opts)
-                -- map('n', '<leader>ca', vim.lsp.buf.code_action, 'Muestra acciones de codigo disponibles', opts)
-                -- map('n', 'gr', function() telescope_builtin.lsp_references({ initial_mode = 'normal' }) end,
-                --     'Muestra lista de referencias', opts)
                 map('n', '<leader>rn', vim.lsp.buf.rename, 'Renombra variable', opts)
                 map('n', '<leader>rs', '<cmd>LspRestart<CR>', 'Reinicia LSP', opts)
             end,
         })
 
-        local signs = {
-            Error = icons.error,
-            Warn = icons.warn,
-            Hint = icons.hint,
-            Info = icons.info
-        }
-        for type, icon in pairs(signs) do
-            local hl = "DiagnosticSign" .. type
-            vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-        end
-
         require('lspconfig.ui.windows').default_options.border = ui_border
 
         -- NOTE: Estas variables son para el servidor de angular
-        local currentDir = vim.fn.getcwd() .. "/node_modules"
-        local default_node_modules = "/home/francisco/.local/share/nvim/mason/packages/angular-language-server/node_modules/@angular/language-server/node_modules," .. currentDir
+        local currentDir = vim.fn.getcwd() .. '/node_modules'
+        local angularPath = vim.fn.expand('$MASON/packages/angular-language-server/node_modules/@angular/language-server/node_modules')
+        local default_node_modules = angularPath .. ',' .. currentDir
         local ngls_cmd = {
             "ngserver",
             "--stdio",
@@ -89,15 +82,32 @@ return {
             css_variables = {},
             emmet_ls = {},
             ts_ls = {},
-            volar = {},
-            lua_ls = {},
+            vue_ls = {},
             marksman = {},
             angularls = {
                 cmd = ngls_cmd,
                 on_new_config = function(new_config, new_root_dir)
                     new_config.cmd = ngls_cmd
                 end
-            }
+            },
+            lua_ls = {
+                settings = {
+                    Lua = {
+                        runtime = {
+                            version = 'LuaJIT'
+                        },
+                        diagnostics = {
+                            globals = { 'vim' }
+                        },
+                        workspace = {
+                            library = vim.api.nvim_get_runtime_file('', true)
+                        },
+                        telemetry = {
+                            enable = false
+                        }
+                    }
+                }
+            },
         }
 
         local ensure_installed = vim.tbl_keys(servers or {})

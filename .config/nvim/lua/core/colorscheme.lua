@@ -69,6 +69,16 @@ local group_colors = {
     ['@lsp.type.type'] = {
         fg = 'NvimLightGray3'
     },
+    ['@lsp.type.class'] = {
+        fg = 'NvimLightGray4'
+    },
+    ['@lsp.type.parameter'] = {
+        fg = 'NvimLightGray2'
+    },
+    ['@lsp.type.variable'] = {
+        fg = 'NvimLightGray2',
+        italic = true,
+    },
     ['@function.method'] = {
         fg = 'NvimLightGray1',
         bold = true,
@@ -77,25 +87,24 @@ local group_colors = {
         fg = 'NvimLightGray2',
         bold = true,
     },
-    ['@lsp.type.class'] = {
-        fg = 'NvimLightGray4'
-    },
     ['@variable.builtin'] = {
         fg = 'NvimLightGray4',
         italic = true,
     },
-    ['@type.variable'] = {
-        fg = 'NvimDarkGray1',
-    },
     ['@type.builtin'] = {
         fg = 'NvimLightBlue',
     },
-    ['@lsp.type.parameter'] = {
-        fg = 'NvimLightGray2'
+    ['@type.variable'] = {
+        fg = 'NvimDarkGray1',
     },
-    ['@lsp.type.variable'] = {
-        fg = 'NvimLightGray2',
-        italic = true,
+    ['@keyword.import'] = {
+        fg = 'NvimDarkCyan',
+    },
+    ['@keyword.conditional'] = {
+        fg = 'NvimDarkCyan',
+    },
+    ['@keyword.repeat'] = {
+        fg = 'NvimDarkCyan',
     },
     ['@tag'] = {
         fg = 'NvimLightGray3'

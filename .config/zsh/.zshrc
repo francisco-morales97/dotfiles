@@ -82,7 +82,8 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # FZF
-export FZF_DEFAULT_OPTS="--height 50% --tmux 75%,50% --layout reverse --border --preview 'bat --color=always --style=numbers {}'"
+# export FZF_DEFAULT_OPTS="--height 50% --tmux 75%,50% --layout reverse --border --preview 'bat --color=always --style=numbers {}'"
+export FZF_DEFAULT_OPTS_FILE="$XDG_CONFIG_HOME/fzf/fzf.conf"
 source <(fzf --zsh)
 
 unset NPM_CONFIG_PREFIX

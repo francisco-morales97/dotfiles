@@ -16,7 +16,7 @@ api.nvim_create_autocmd('BufWinEnter', {
     callback = function()
         if api.nvim_win_get_config(0).zindex then
             api.nvim_win_set_config(0, { border = border })
-    end
+        end
     end
 })
 
