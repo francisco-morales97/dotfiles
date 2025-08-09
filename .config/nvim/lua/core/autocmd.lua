@@ -47,3 +47,26 @@ api.nvim_create_autocmd('WinLeave', {
         opt.cursorcolumn = false
     end
 })
+
+api.nvim_create_autocmd('LspAttach', {
+    desc = 'Keymaps al iniciarse los LSP',
+    callback = function(event)
+        local map = require('utils').map
+        local opts = {buffer = event.buf}
+
+        map('n', 'gd', vim.lsp.buf.definition, 'Ir a definicion', opts)
+        map('n', 'K', vim.lsp.buf.hover, 'Muestra info en hover', opts)
+        map('n', 'gl', vim.diagnostic.open_float, 'Abre diagnostico en ventana flotante', opts)
+        map('n', '<leader>rn', vim.lsp.buf.rename, 'Renombra variable', opts)
+        map('n', '<leader>rs', '<cmd>LspRestart<CR>', 'Reinicia LSP', opts)
+    end,
+})
+
+local group = vim.api.nvim_create_augroup('MiniFileTypeDisabling', { clear = true })
+api.nvim_create_autocmd("FileType", {
+    pattern = { 'oil', 'lazy', 'mason', 'help' },
+    group = group,
+    callback = function()
+        vim.b.miniindentscope_disable = true
+    end
+})
