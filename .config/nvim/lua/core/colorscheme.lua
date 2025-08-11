@@ -79,6 +79,12 @@ local group_colors = {
         fg = 'NvimLightGray2',
         italic = true,
     },
+    ['@lsp.type.keyword.cs'] = {
+        link = '@keyword.import'
+    },
+    ['@lsp.type.controlKeyword.cs'] = {
+        link = '@keyword.conditional'
+    },
     ['@function.method'] = {
         fg = 'NvimLightGray1',
         bold = true,

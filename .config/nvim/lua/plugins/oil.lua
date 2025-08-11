@@ -3,6 +3,7 @@ return {
     dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
         local map = require('utils').map
+        local border = require('utils').border
         local oil = require('oil')
 
         oil.setup({
@@ -80,9 +81,9 @@ return {
             },
             float = {
                 padding = 2,
-                max_width = 80,
+                max_width = 150,
                 max_height = 0,
-                border = "rounded",
+                border = border,
                 win_options = {
                     winblend = 0,
                 },
@@ -97,7 +98,7 @@ return {
                 max_height = 0.9,
                 min_height = { 5, 0.1 },
                 height = nil,
-                border = "rounded",
+                border = border,
                 win_options = {
                     winblend = 0,
                 },
@@ -109,7 +110,7 @@ return {
                 max_height = { 10, 0.9 },
                 min_height = { 5, 0.1 },
                 height = nil,
-                border = "rounded",
+                border = border,
                 minimized_border = "none",
                 win_options = {
                     winblend = 0,
@@ -117,6 +118,6 @@ return {
             },
         })
 
-        map('n', '<leader>t', '<cmd>Oil<CR>', 'Abre explorador de archivos')
+        map('n', '<leader>t', '<cmd>Oil --float<CR>', 'Abre explorador de archivos')
     end
 }
