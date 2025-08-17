@@ -1,0 +1,27 @@
+{
+  "For/Of control flow": {
+    "prefix": "for",
+    "body": [
+      "@for (${1:item} of ${2:array}; track ${3:index}) {",
+      "\t${4:content}",
+      "} @empty {",
+      "\t${5:empty}",
+      "}"
+    ]
+  },
+  "If/Else control flow": {
+    "prefix": "if",
+    "body": [
+      "@if (${1:condition}) {",
+      "\t${2:content}",
+      "} @else {",
+      "\t${3:else}"
+    ]
+  },
+  "Interpolation of data": {
+    "prefix": "inter",
+    "body": [
+      "{{ ${1:content} }}"
+    ]
+  }
+}

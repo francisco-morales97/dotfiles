@@ -1,3 +1,4 @@
+local border = require('utils').border
 local g = vim.g
 local opt = vim.opt
 
@@ -25,6 +26,7 @@ opt.number = true
 opt.relativenumber = true
 opt.scrolloff = 8
 opt.breakindent = true
+opt.winborder = border
 
 opt.tabstop = 4
 opt.shiftwidth = 4

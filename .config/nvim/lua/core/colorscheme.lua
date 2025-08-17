@@ -25,37 +25,52 @@ local group_colors = {
         fg = 'NvimLightYellow',
         bold = true,
     },
+    ['Pmenu'] = {
+        bg = 'NONE',
+    },
     ['PmenuSel'] = {
-        bg ='NvimLightGreen',
-        fg ='NvimDarkGray1'
+        bg = 'NvimLightGreen',
+        fg = 'NvimDarkGray1'
     },
     ['StatusLine'] = {
-        bg ='NONE',
-        fg ='NvimLightGray1'
+        bg = 'NONE',
+        fg = 'NvimLightGray1'
     },
-    ['CmpItemKindVariable'] = {
-        fg ='NvimLightBlue'
+    ['BlinkCmpMenu'] = {
+        bg = 'NONE',
     },
-    ['CmpItemKindInterface'] = {
-        fg ='NvimLightYellow'
+    ['BlinkCmpMenuBorder'] = {
+        fg = 'NvimDarkGray4'
     },
-    ['CmpItemKindClass'] = {
-        fg ='NvimLightYellow'
+    ['BlinkCmpDocBorder'] = {
+        fg = 'NvimDarkGray4'
     },
-    ['CmpItemKindProperty'] = {
-        fg ='NvimLightCyan'
+    ['BlinkCmpSignatureBorder'] = {
+        fg = 'NvimDarkGray4'
     },
-    ['CmpItemKindFunction'] = {
-        fg ='NvimLightMagenta'
+    ['BlinkCmpKindVariable'] = {
+        fg = 'NvimLightBlue'
     },
-    ['CmpItemKindMethod'] = {
-        fg ='NvimLightMagenta'
+    ['BlinkCmpKindInterface'] = {
+        fg = 'NvimLightYellow'
     },
-    ['CmpItemKindText'] = {
-        fg ='NvimLightGray2'
+    ['BlinkCmpKindClass'] = {
+        fg = 'NvimLightYellow'
     },
-    ['CmpItemKindConstant'] = {
-        fg ='NvimLightRed'
+    ['BlinkCmpKindProperty'] = {
+        fg = 'NvimLightCyan'
+    },
+    ['BlinkCmpKindFunction'] = {
+        fg = 'NvimLightMagenta'
+    },
+    ['BlinkCmpKindMethod'] = {
+        fg = 'NvimLightMagenta'
+    },
+    ['BlinkCmpKindText'] = {
+        fg = 'NvimLightGray2'
+    },
+    ['BlinkCmpKindConstant'] = {
+        fg = 'NvimLightRed'
     },
     ['FzfLuaBorder'] = {
         fg = 'NvimDarkGray4'

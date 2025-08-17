@@ -5,6 +5,7 @@ return {
         local map = require('utils').map
 
         require('mini.pairs').setup()
+        require('mini.icons').setup()
 
         require('mini.indentscope').setup({
             draw = {
@@ -49,6 +50,5 @@ return {
         })
 
         map('n', '<leader>bd', MiniBufremove.delete, 'Borra buffer actual')
-        map('n', '<leader>bu', MiniBufremove.unshow, 'Oculta buffer actual')
     end
 }

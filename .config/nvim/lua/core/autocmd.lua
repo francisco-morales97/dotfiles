@@ -22,7 +22,7 @@ api.nvim_create_autocmd('BufWinEnter', {
 
 api.nvim_create_autocmd("BufWinEnter", {
     desc = 'Reajusta el tamaño de los archivos css al abrirse como split vertical',
-    pattern = {'*.scss', '*.css'},
+    pattern = { '*.scss', '*.css' },
     callback = function()
         if vim.fn.winnr('$') > 1 then
             vim.cmd('vertical resize 86')
@@ -52,7 +52,7 @@ api.nvim_create_autocmd('LspAttach', {
     desc = 'Keymaps al iniciarse los LSP',
     callback = function(event)
         local map = require('utils').map
-        local opts = {buffer = event.buf}
+        local opts = { buffer = event.buf }
 
         map('n', 'gd', vim.lsp.buf.definition, 'Ir a definicion', opts)
         map('n', 'K', vim.lsp.buf.hover, 'Muestra info en hover', opts)
@@ -62,11 +62,19 @@ api.nvim_create_autocmd('LspAttach', {
     end,
 })
 
-local group = vim.api.nvim_create_augroup('MiniFileTypeDisabling', { clear = true })
+local mini_augroup = vim.api.nvim_create_augroup('MiniFileTypeDisabling', { clear = true })
 api.nvim_create_autocmd("FileType", {
     pattern = { 'oil', 'lazy', 'mason', 'help' },
-    group = group,
+    group = mini_augroup,
     callback = function()
         vim.b.miniindentscope_disable = true
     end
+})
+
+local lint_augroup = vim.api.nvim_create_augroup('lint', { clear = true })
+vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWritePost', 'InsertLeave', 'TextChanged' }, {
+    group = lint_augroup,
+    callback = function()
+        require('lint').try_lint()
+    end,
 })

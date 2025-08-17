@@ -3,15 +3,13 @@ return {
     cmd = { 'LspInfo', 'LspInstall', 'LspStart' },
     event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
-        'hrsh7th/cmp-nvim-lsp',
+        'saghen/blink.cmp',
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
     },
     config = function()
-        local icons = require('utils').icons
         local ui_border = require('utils').border
         local mason_lsp = require('mason-lspconfig')
-        local cmp_nvim_lsp = require('cmp_nvim_lsp')
         local servers = {
             'html',
             'cssls',
@@ -25,9 +23,6 @@ return {
         }
 
         vim.lsp.enable(servers)
-        vim.lsp.config('*', {
-            capabilities = cmp_nvim_lsp.default_capabilities()
-        })
         vim.lsp.config.lua_ls = {
             settings = {
                 Lua = {
@@ -42,7 +37,8 @@ return {
         }
 
         local currentDir = vim.fn.getcwd() .. '/node_modules'
-        local angularPath = vim.fn.expand('$MASON/packages/angular-language-server/node_modules/@angular/language-server/node_modules')
+        local angularPath = vim.fn.expand(
+            '$MASON/packages/angular-language-server/node_modules/@angular/language-server/node_modules')
         local default_node_modules = angularPath .. ',' .. currentDir
         local ngls_cmd = {
             "ngserver",
@@ -67,10 +63,10 @@ return {
             },
             signs = {
                 text = {
-                    [vim.diagnostic.severity.ERROR] = icons.error,
-                    [vim.diagnostic.severity.WARN] = icons.warn,
-                    [vim.diagnostic.severity.HINT] = icons.hint,
-                    [vim.diagnostic.severity.INFO] = icons.info,
+                    [vim.diagnostic.severity.ERROR] = 'E',
+                    [vim.diagnostic.severity.WARN] = 'W',
+                    [vim.diagnostic.severity.HINT] = 'H',
+                    [vim.diagnostic.severity.INFO] = 'I',
                 }
             }
         })

@@ -1,6 +1,5 @@
 return {
     'stevearc/oil.nvim',
-    dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
         local map = require('utils').map
         local border = require('utils').border
